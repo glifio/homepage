@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import axios from 'axios'
 import { space, layout, typography, border, color } from 'styled-system'
@@ -20,13 +21,12 @@ const Image = styled.img`
   z-index: -999;
 `
 
-const ButtonSignUp = styled.button`
+const StyledButton = styled.button`
   outline: none;
   border: 0;
   cursor: pointer;
   background: transparent;
   transition: 0.18s ease-in;
-
   &:hover {
     transform:scale(1.05);
   }
@@ -60,6 +60,7 @@ const ExtLink = styled.a`
 `
 
 export default () => {
+  const router = useRouter()
   const [clicked, setClicked] = useState(false)
   const [error, setError] = useState('')
   const [subscribed, setSubscribed] = useState(false)
@@ -173,106 +174,112 @@ export default () => {
             display='flex'
             flexWrap='wrap'
             alignItems='baseline'
-            justifyContent='space-between'
+            justifyContent='flex-start'
             width='100%'
             color='core.darkgray'
             my={[2, 3]}
           >
-            {clicked ? (
-              <>
-                <Menu display='flex' alignItems='center'>
-                  <MenuItem>
-                    <Box
-                      display='flex'
-                      flexWrap='wrap'
-                      width={['100%', 'auto']}
-                    >
-                      <InputEmail
-                        width={['100%', 'auto']}
-                        fontSize={[4, 5, 6]}
-                        color='core.nearblack'
-                        border={1}
-                        borderWidth={2}
-                        px={3}
-                        py={3}
-                        textAlign='center'
-                        placeholder='Your email, please'
-                        borderTopLeftRadius={[0, 2]}
-                        borderBottomLeftRadius={[0, 2]}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                      <ButtonSignUp
-                        width={['100%', 'auto']}
-                        color='core.white'
-                        bg='core.nearblack'
-                        fontSize={[4, 5, 6]}
-                        border={1}
-                        borderColor='core.nearblack'
-                        borderWidth={2}
-                        borderTopRightRadius={[0, 2]}
-                        borderBottomRightRadius={[0, 2]}
-                        px={6}
-                        py={3}
-                        height='max-content'
-                        onClick={postToMailChimp}
-                      >
-                        Submit
-                      </ButtonSignUp>
-                    </Box>
-
-                    {error ? (
-                      <Title mt={2} color='red'>
-                        {error}
-                      </Title>
-                    ) : (
-                      <Title mt={2}>
-                        Glif don&rsquo;t spam! Unsub whenever.
-                      </Title>
-                    )}
-                    {subscribed && (
-                      <Title mt={2} color='status.success.background'>
-                        You&rsquo;re subscribed. Keep an eye out.
-                      </Title>
-                    )}
-                  </MenuItem>
-                </Menu>
-                <ButtonSignUp
-                  width={['100%', 'auto']}
-                  background='transparent'
-                  color='core.nearblack'
-                  fontSize={[4, 5, 6]}
-                  border={1}
-                  px={6}
-                  py={2}
-                  my={2}
-                  height='max-content'
-                  borderRadius={6}
-                  onClick={() => setClicked(false)}
-                >
-                  Cancel
-                </ButtonSignUp>
-              </>
-            ) : (
-              <>
-                <Text fontSize={[4, 5, 6]} my={2}>
-                  Be the first to learn when we launch
+            <StyledButton
+              color='core.white'
+              bg='core.primary'
+              fontSize={[5, 6]}
+              border={1}
+              px={[3, 5, 6]}
+              py={2}
+              mr={[0, '8%']}
+              height='max-content'
+              borderRadius={6}
+              onClick={() =>
+                (window.location.href = 'https://www.wallet.glif.io')
+              }
+            >
+              Filecoin Wallet
+            </StyledButton>
+            <StyledButton
+              color='core.white'
+              bg='core.primary'
+              fontSize={[5, 6]}
+              border={1}
+              px={[3, 5, 6]}
+              py={2}
+              mr={[0, '8%']}
+              height='max-content'
+              borderRadius={6}
+              onClick={() =>
+                (window.location.href = 'https://www.verify.glif.io')
+              }
+            >
+              Get verified Filecoin storage
+            </StyledButton>
+          </MenuItem>
+          <MenuItem>
+            <Menu
+              display='flex'
+              alignItems='center'
+              justifyContent='space-between'
+              width='100%'
+              maxWidth={12}
+              mt={[4, 0, 0]}
+            >
+              <MenuItem>
+                <Text fontSize={4} my={2}>
+                  Stay in the loop, get beta access to new Glifs
                 </Text>
-
-                <ButtonSignUp
-                  background='transparent'
-                  color='core.nearblack'
-                  fontSize={[4, 5, 6]}
-                  border={1}
-                  px={6}
-                  py={2}
-                  height='max-content'
-                  borderRadius={6}
-                  onClick={() => setClicked(true)}
+                <Box
+                  display='flex'
+                  flexWrap='wrap'
+                  width={['100%', 'auto']}
+                  my={4}
                 >
-                  Sign Up
-                </ButtonSignUp>
-              </>
-            )}
+                  <InputEmail
+                    width={['100%', 'auto']}
+                    fontSize={4}
+                    color='core.nearblack'
+                    border={1}
+                    borderWidth={2}
+                    px={3}
+                    py={3}
+                    textAlign='center'
+                    placeholder='Your email, please'
+                    borderTopLeftRadius={[0, 2]}
+                    borderBottomLeftRadius={[0, 2]}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <StyledButton
+                    width={['100%', 'auto']}
+                    color='core.white'
+                    bg='core.nearblack'
+                    fontSize={4}
+                    border={1}
+                    borderColor='core.nearblack'
+                    borderWidth={2}
+                    borderTopRightRadius={[0, 2]}
+                    borderBottomRightRadius={[0, 2]}
+                    px={6}
+                    py={3}
+                    height='max-content'
+                    onClick={postToMailChimp}
+                  >
+                    Submit
+                  </StyledButton>
+                </Box>
+
+                {error ? (
+                  <Title mt={2} color='red'>
+                    {error}
+                  </Title>
+                ) : (
+                  <Title mt={2} color='core.silver'>
+                    Glif don&rsquo;t spam! Unsub whenever.
+                  </Title>
+                )}
+                {subscribed && (
+                  <Title mt={2} color='status.success.background'>
+                    You&rsquo;re subscribed. Keep an eye out.
+                  </Title>
+                )}
+              </MenuItem>
+            </Menu>
           </MenuItem>
         </Menu>
       </section>
@@ -284,7 +291,14 @@ export default () => {
           flexWrap='wrap'
           my={8}
         >
-          <MenuItem display='flex' alignItems='center' width='100%' mb={5}>
+          <MenuItem
+            display='flex'
+            flexWrap='wrap'
+            alignItems='center'
+            justifyContent=''
+            width='100%'
+            mb={5}
+          >
             <Box
               display='inline-block'
               py={2}
@@ -348,6 +362,82 @@ export default () => {
           </MenuItem>
         </Menu>
       </section>
+      <section name='Glif Verification'>
+        <Menu
+          display='flex'
+          alignItems='center'
+          justifyContent='flex-start'
+          flexWrap='wrap'
+          my={8}
+        >
+          <MenuItem display='flex' alignItems='center' width='100%' mb={5}>
+            <Box
+              display='inline-block'
+              py={2}
+              mr={4}
+              px={3}
+              borderRadius={4}
+              css={`
+                background: linear-gradient(
+                  180deg,
+                  #1a1a1a 2.72%,
+                  rgba(128, 128, 128, 0.6) 100%
+                );
+                border-radius: 16px;
+              `}
+            >
+              <IconGlif
+                fill='#fff'
+                size={[6, 7, 8]}
+                css={`
+                  transform: rotate(-90deg);
+                `}
+              />
+            </Box>
+            <TitleCopy>Verification</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>Prove</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>your</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>identity</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>and</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>get</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>verified</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3]} height='120px'>
+            <Image
+              width='200px'
+              alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
+              src='/imgnode.png'
+            />
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>Filecoin</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>storage</TitleCopy>
+          </MenuItem>
+        </Menu>
+      </section>
       <section name='Glif Node'>
         <Menu
           display='flex'
@@ -380,27 +470,19 @@ export default () => {
                 `}
               />
             </Box>
-            <TitleCopy>Nodes</TitleCopy>
+            <TitleCopy>Node</TitleCopy>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
-            <TitleCopy>Public</TitleCopy>
+            <TitleCopy>A</TitleCopy>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
-            <TitleCopy>and</TitleCopy>
-          </MenuItem>
-
-          <MenuItem mr='8%' my={[2, 3]} height='120px'>
-            <Image
-              width='200px'
-              alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
-              src='/imgnode.png'
-            />
+            <TitleCopy>fully</TitleCopy>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
-            <TitleCopy> dedicated</TitleCopy>
+            <TitleCopy>managed</TitleCopy>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
@@ -412,29 +494,66 @@ export default () => {
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
-            <TitleCopy> infrastructure</TitleCopy>
+            <TitleCopy>you</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3]} height='120px'>
+            <Image
+              width='200px'
+              alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
+              src='/imgnode.png'
+            />
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>can</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>deploy</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>from</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>the</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>command-line</TitleCopy>
           </MenuItem>
         </Menu>
       </section>
       <section name='Made by OWL'>
-        <Menu>
-          <MenuItem display='flex' alignItems='center' my={[2, 3, 5]}>
-            <IconGlif size={6} />
-            <Title my={0} mx={2}>
-              is an
-              <ExtLink
-                href='https://www.openworklabs.com'
-                color='core.primary'
-                borderBottom={1}
-                borderWidth={3}
-                fontSize={4}
-                mx={1}
-                target='_blank'
-              >
-                OWL
-              </ExtLink>{' '}
-              project {'\u00A9'} 2020
-            </Title>
+        <Menu
+          display='flex'
+          flexWrap='wrap'
+          justifyContent='space-between'
+          alignItems='center'
+        >
+          <MenuItem>
+            <Menu>
+              <MenuItem display='flex' alignItems='center' my={[2, 3, 5]}>
+                <IconGlif size={6} />
+                <Title my={0} mx={2}>
+                  is an
+                  <ExtLink
+                    href='https://www.openworklabs.com'
+                    color='core.primary'
+                    borderBottom={1}
+                    borderWidth={3}
+                    fontSize={4}
+                    mx={1}
+                    target='_blank'
+                  >
+                    OWL
+                  </ExtLink>{' '}
+                  project {'\u00A9'} 2020
+                </Title>
+              </MenuItem>
+            </Menu>
           </MenuItem>
         </Menu>
       </section>
