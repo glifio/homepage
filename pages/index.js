@@ -51,12 +51,39 @@ const InputEmail = styled.input`
 `
 
 const ExtLink = styled.a`
+  position: relative;
   text-decoration: none;
+  color: #0051ff;
+  background: #0051ff00;
+  z-index: 9;
+  transition: 0.24s ease-in-out;
   ${space}
   ${layout}
   ${typography}
   ${border}
   ${color}
+
+  &:hover {
+    background: #0051ff;
+    color: #fff;
+  }
+
+  &:before {
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat
+    background-position: center center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px;
+    position: absolute;
+    z-index: -9;
+  }
+
+
 `
 
 export default () => {
@@ -146,14 +173,6 @@ export default () => {
             <TitleCopy>tools</TitleCopy>
           </MenuItem>
 
-          <MenuItem height='100px' mr='8%' my={[2, 3, 5]}>
-            <Image
-              width='200px'
-              alt='Credit & Source: https://www.behance.net/gallery/14115935/Lapka-PEM-Achievement-Stones'
-              src='/imgtools.png'
-            />
-          </MenuItem>
-
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy>for</TitleCopy>
           </MenuItem>
@@ -169,6 +188,7 @@ export default () => {
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy>network.</TitleCopy>
           </MenuItem>
+
           <MenuItem
             display='flex'
             flexWrap='wrap'
@@ -266,7 +286,7 @@ export default () => {
                   px={6}
                   py={2}
                   height='max-content'
-                  borderRadius={6}
+                  borderRadius={4}
                   onClick={() => setClicked(true)}
                 >
                   Sign Up
@@ -282,21 +302,23 @@ export default () => {
           alignItems='center'
           justifyContent='flex-start'
           flexWrap='wrap'
-          my={8}
+          my={9}
         >
-          <MenuItem display='flex' alignItems='center' width='100%' mb={5}>
+          <MenuItem display='flex' alignItems='center' width={['100%', 'auto']}>
             <Box
-              display='inline-block'
+              display='flex'
+              alignItems='center'
+              justifyContent='space-between'
               py={2}
-              mr={4}
+              mr={[0, 6]}
+              mb={[3, 0]}
               px={3}
               borderRadius={4}
+              width={['100%', 'auto']}
+              height={9}
               css={`
-                background: linear-gradient(
-                  180deg,
-                  #1a1a1a 2.72%,
-                  rgba(128, 128, 128, 0.6) 100%
-                );
+                background: url('/imgtools.png ') center center no-repeat;
+                background-size: 100%;
                 border-radius: 16px;
               `}
             >
@@ -307,8 +329,8 @@ export default () => {
                   transform: rotate(-90deg);
                 `}
               />
+              <TitleCopy ml={3}>Wallet</TitleCopy>
             </Box>
-            <TitleCopy>Wallet</TitleCopy>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
@@ -317,10 +339,6 @@ export default () => {
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy>lightweight</TitleCopy>
-          </MenuItem>
-
-          <MenuItem mr='8%' my={[2, 3]} height='120px'>
-            <Image width='300px' alt='' src='/imgwallet.png' />
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
@@ -346,30 +364,59 @@ export default () => {
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy>Filecoin</TitleCopy>
           </MenuItem>
+
+          {/* <MenuItem mr='8%' my={[2, 3]} height='120px'>
+            <Image width='300px' alt='' src='/imgwallet.png' />
+          </MenuItem> */}
+
+          <MenuItem width={['100%', 'auto']} mt={3}>
+            <ExtLink
+              href='https://wallet.glif.io'
+              display='flex'
+              borderRadius={4}
+              p={4}
+              fontSize={5}
+              css={`
+                /* Needs to use theme property */
+                border-radius: 16px;
+                ::before {
+                  background: url('/imgtools.png ');
+                  background-size: cover;
+                }
+              `}
+            >
+              <TitleCopy z-index='999'>
+                Go <sup>↗</sup>
+              </TitleCopy>
+            </ExtLink>
+          </MenuItem>
         </Menu>
       </section>
-      <section name='Glif Node'>
+      <section name='Glif Verify'>
         <Menu
           display='flex'
           alignItems='center'
           justifyContent='flex-start'
           flexWrap='wrap'
-          my={8}
+          my={9}
         >
-          <MenuItem display='flex' alignItems='center' width='100%' mb={5}>
+          <MenuItem display='flex' alignItems='center' width={['100%', 'auto']}>
             <Box
-              display='inline-block'
+              display='flex'
+              alignItems='center'
+              justifyContent='space-between'
               py={2}
-              mr={4}
+              mr={[0, 4]}
+              mb={[3, 0]}
               px={3}
               borderRadius={4}
+              width={['100%', 'auto']}
+              height={9}
               css={`
-                background: linear-gradient(
-                  180deg,
-                  #1a1a1a 2.72%,
-                  rgba(128, 128, 128, 0.6) 100%
-                );
+                background: url('/imgverify.png') center no-repeat;
+                background-size: 110%;
                 border-radius: 16px;
+                alt: 'Source: https://www.nontemporary.com/post/190437968500';
               `}
             >
               <IconGlif
@@ -379,8 +426,101 @@ export default () => {
                   transform: rotate(-90deg);
                 `}
               />
+              <TitleCopy ml={3} color='white'>
+                Verify
+              </TitleCopy>
             </Box>
-            <TitleCopy>Nodes</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>Earn</TitleCopy>
+          </MenuItem>
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>verified</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>Filecoin</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>storage</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>when</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>you</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>verify</TitleCopy>
+          </MenuItem>
+
+          <MenuItem mr='8%' my={[2, 3, 5]}>
+            <TitleCopy>yourself</TitleCopy>
+          </MenuItem>
+          <MenuItem width={['100%', 'auto']} mt={3}>
+            <ExtLink
+              href='https://verify.glif.io'
+              display='flex'
+              borderRadius={4}
+              p={4}
+              fontSize={5}
+              css={`
+                /* Needs to use theme property */
+                border-radius: 16px;
+                ::before {
+                  background: url('/imgverify.png ');
+                  background-size: 110%;
+                  background-position: center center;
+                }
+              `}
+            >
+              <TitleCopy z-index='999'>
+                Go <sup>↗</sup>
+              </TitleCopy>
+            </ExtLink>
+          </MenuItem>
+        </Menu>
+      </section>
+      <section name='Glif Node'>
+        <Menu
+          display='flex'
+          alignItems='center'
+          justifyContent='flex-start'
+          flexWrap='wrap'
+          my={9}
+        >
+          <MenuItem display='flex' alignItems='center' width={['100%', 'auto']}>
+            <Box
+              display='flex'
+              alignItems='center'
+              justifyContent='space-between'
+              py={2}
+              mr={[0, 4]}
+              mb={[3, 0]}
+              px={3}
+              borderRadius={4}
+              width={['100%', 'auto']}
+              height={9}
+              css={`
+                background: url('/imgnode.png') left center no-repeat;
+                border-radius: 16px;
+              `}
+              alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
+            >
+              <IconGlif
+                fill='#fff'
+                size={[6, 7, 8]}
+                css={`
+                  transform: rotate(-90deg);
+                `}
+              />
+              <TitleCopy ml={3}>Nodes</TitleCopy>
+            </Box>
           </MenuItem>
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
@@ -391,13 +531,13 @@ export default () => {
             <TitleCopy>and</TitleCopy>
           </MenuItem>
 
-          <MenuItem mr='8%' my={[2, 3]} height='120px'>
+          {/* <MenuItem mr='8%' my={[2, 3]} height='120px'>
             <Image
               width='200px'
               alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
               src='/imgnode.png'
             />
-          </MenuItem>
+          </MenuItem> */}
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy> dedicated</TitleCopy>
@@ -413,6 +553,28 @@ export default () => {
 
           <MenuItem mr='8%' my={[2, 3, 5]}>
             <TitleCopy> infrastructure</TitleCopy>
+          </MenuItem>
+
+          <MenuItem width={['100%', 'auto']} mt={3}>
+            <ExtLink
+              href='https://wallet.glif.io'
+              display='flex'
+              borderRadius={4}
+              p={4}
+              fontSize={5}
+              css={`
+                /* Needs to use theme property */
+                border-radius: 16px;
+                ::before {
+                  background: url('/imgnode.png ');
+                  background-size: cover;
+                }
+              `}
+            >
+              <TitleCopy z-index='999'>
+                Go <sup>↗</sup>
+              </TitleCopy>
+            </ExtLink>
           </MenuItem>
         </Menu>
       </section>
