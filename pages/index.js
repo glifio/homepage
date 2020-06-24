@@ -66,6 +66,7 @@ const ExtLink = styled.a`
   &:hover {
     background: #0051ff;
     color: #fff;
+    
   }
 
   &:before {
@@ -73,6 +74,8 @@ const ExtLink = styled.a`
     background-size: contain;
     background-repeat: no-repeat
     background-position: center center;
+    border: 1px solid;
+
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -586,12 +589,20 @@ export default () => {
               is an
               <ExtLink
                 href='https://www.openworklabs.com'
-                color='core.primary'
                 borderBottom={1}
                 borderWidth={3}
                 fontSize={4}
                 mx={1}
                 target='_blank'
+                css={`
+                  &:hover {
+                    color: #0051ff;
+                    background: transparent;
+                  }
+                  ::before {
+                    border: 0;
+                  }
+                `}
               >
                 OWL
               </ExtLink>{' '}
