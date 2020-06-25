@@ -1,6 +1,6 @@
-import { cleanup, render, screen, act, fireEvent } from '@testing-library/react'
+import { cleanup, render } from '@testing-library/react'
 
-import Home from './Home'
+import Home from './'
 
 describe('Home', () => {
   afterEach(cleanup)
