@@ -3,14 +3,9 @@ import { string } from 'prop-types'
 import styled from 'styled-components'
 import axios from 'axios'
 import { space, layout, typography, border, color } from 'styled-system'
-import { Box, Menu, MenuItem, Title, Text, IconGlif } from '../Shared'
+import { Box, Menu, MenuItem, Title, Text, IconGlif, Subtitle } from '../Shared'
 import SubtitleLogo from './SubtitleLogo'
 import ExitLink, { LinkWrapper } from './ExitLink'
-
-const TitleCopy = styled(Title)`
-  /* Used this: https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters */
-  font-size: calc(48px + (64 - 40) * (100vw - 360px) / (1440 - 360));
-`
 
 const ButtonSignUp = styled.button`
   outline: none;
@@ -46,7 +41,7 @@ const Sentence = ({ sentenceStr }) => {
   return sentenceStr.split(' ').map((word, i) => {
     return (
       <MenuItem key={i} mr='8%' my={[2, 3, 5]}>
-        <TitleCopy>{word}</TitleCopy>
+        <Subtitle>{word}</Subtitle>
       </MenuItem>
     )
   })

@@ -3,12 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, layout, typography, border, color } from 'styled-system'
 
-import { MenuItem, Title } from '../Shared'
-
-const TitleCopy = styled(Title)`
-  /* Used this: https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters */
-  font-size: calc(48px + (64 - 40) * (100vw - 360px) / (1440 - 360));
-`
+import { MenuItem, Subtitle, Title } from '../Shared'
 
 export const LinkWrapper = styled.a`
   position: relative;
@@ -64,9 +59,9 @@ const ExitLink = ({ href }) => (
         }
       `}
     >
-      <TitleCopy z-index='999'>
+      <Subtitle z-index='999'>
         Go <sup>↗</sup>
-      </TitleCopy>
+      </Subtitle>
     </LinkWrapper>
   </MenuItem>
 )
