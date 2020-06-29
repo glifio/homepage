@@ -22,11 +22,7 @@ export const LinkWrapper = styled.a`
 
   &:before {
     content: '';
-    background-size: contain;
-    background-repeat: no-repeat
-    background-position: center center;
     border: 1px solid;
-
     opacity: 0.5;
     top: 0;
     left: 0;
@@ -43,24 +39,11 @@ export const LinkWrapper = styled.a`
   ${color}
 `
 
-const ExitLink = ({ href }) => (
+const ExitLink = ({ href, linkName }) => (
   <MenuItem width={['100%', 'auto']} mt={3}>
-    <LinkWrapper
-      href={href}
-      borderRadius={4}
-      p={4}
-      fontSize={5}
-      css={`
-        /* Needs to use theme property */
-        border-radius: 16px;
-        ::before {
-          background: url('/imgnode.png');
-          background-size: cover;
-        }
-      `}
-    >
+    <LinkWrapper href={href} borderRadius={4} p={4} fontSize={5}>
       <Subtitle z-index='999'>
-        Go <sup>↗</sup>
+        {linkName} <sup>↗</sup>
       </Subtitle>
     </LinkWrapper>
   </MenuItem>
