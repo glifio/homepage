@@ -15,7 +15,7 @@ const ButtonSignUp = styled.button`
   transition: 0.18s ease-in;
 
   &:hover {
-    transform:scale(1.05);
+    transform:translateY(-5%);
   }
   ${space}
   ${layout}
@@ -95,32 +95,22 @@ export default () => {
         <Menu
           display='flex'
           alignItems='center'
-          justifyContent='flex-start'
+          justifyContent='center'
           flexWrap='wrap'
+          mb={8}
         >
-          <MenuItem>
-            <Box
-              display='inline-block'
-              py={3}
-              mr={[4, 6, 7, 8]}
-              px={2}
-              borderRadius={4}
-              css={`
-                background: linear-gradient(180deg, #ff8d3b 0%, #ffeb80 100%);
-                border-radius: 16px;
-              `}
-            >
-              <IconGlif size={[6, 7, 8]} />
-            </Box>
-          </MenuItem>
+          <MenuItem></MenuItem>
 
-          <Sentence sentenceStr='is an interoperable set of tools for the Filecion network.' />
-
+          <Sentence sentenceStr='Glif is an interoperable set of tools' />
+          <Box py={3} mr='8%' px={2} borderRadius={4} border={1}>
+            <IconGlif size={[6, 7, 8]} />
+          </Box>
+          <Sentence sentenceStr='for the Filecoin network.' />
           <MenuItem
             display='flex'
             flexWrap='wrap'
             alignItems='baseline'
-            justifyContent='space-between'
+            justifyContent={['center', 'space-between']}
             width='100%'
             color='core.darkgray'
             my={[2, 3]}
@@ -133,9 +123,10 @@ export default () => {
                       display='flex'
                       flexWrap='wrap'
                       width={['100%', 'auto']}
+                      maxWidth={13}
                     >
                       <InputEmail
-                        width={['100%', 'auto']}
+                        width='100%'
                         fontSize={[4, 5, 6]}
                         color='core.nearblack'
                         border={1}
@@ -144,20 +135,20 @@ export default () => {
                         py={3}
                         textAlign='center'
                         placeholder='Your email, please'
-                        borderTopLeftRadius={[0, 2]}
-                        borderBottomLeftRadius={[0, 2]}
+                        borderTopLeftRadius={4}
+                        borderTopRightRadius={4}
                         onChange={(e) => setEmail(e.target.value)}
                       />
                       <ButtonSignUp
-                        width={['100%', 'auto']}
+                        width='100%'
                         color='core.white'
                         bg='core.nearblack'
                         fontSize={[4, 5, 6]}
                         border={1}
                         borderColor='core.nearblack'
                         borderWidth={2}
-                        borderTopRightRadius={[0, 2]}
-                        borderBottomRightRadius={[0, 2]}
+                        borderBottomLeftRadius={4}
+                        borderBottomRightRadius={4}
                         px={6}
                         py={3}
                         height='max-content'
@@ -193,7 +184,7 @@ export default () => {
                   py={2}
                   my={2}
                   height='max-content'
-                  borderRadius={6}
+                  borderRadius={4}
                   onClick={() => setClicked(false)}
                 >
                   Cancel
@@ -229,7 +220,7 @@ export default () => {
           alignItems='center'
           justifyContent='flex-start'
           flexWrap='wrap'
-          my={9}
+          mb={9}
         >
           <SubtitleLogo
             alt='Source: https://www.nontemporary.com/post/190437968500'
@@ -237,7 +228,7 @@ export default () => {
             imageUrl='/imgtools.png'
           />
           <Sentence sentenceStr='A lightweight interface for sending and receiving Filecoin.' />
-          <ExitLink href='https://wallet.glif.io' />
+          <ExitLink linkName='Go' href='https://wallet.glif.io' />
         </Menu>
       </section>
       <section name='Glif Verify'>
@@ -246,11 +237,11 @@ export default () => {
           alignItems='center'
           justifyContent='flex-start'
           flexWrap='wrap'
-          my={9}
+          mb={9}
         >
           <SubtitleLogo color='white' text='Verify' imageUrl='/imgverify.png' />
           <Sentence sentenceStr='Earn verified Filecoin storage when you verify yourself.' />
-          <ExitLink href='https://verify.glif.io' />
+          <ExitLink linkName='Go' href='https://verify.glif.io' />
         </Menu>
       </section>
       <section name='Glif Node'>
@@ -259,7 +250,7 @@ export default () => {
           alignItems='center'
           justifyContent='flex-start'
           flexWrap='wrap'
-          my={9}
+          mb={9}
         >
           <SubtitleLogo
             alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
@@ -268,13 +259,15 @@ export default () => {
           />
 
           <Sentence sentenceStr='Public and dedicated Filecoin node infrastructure.' />
+          <ExitLink linkName='Email Us' href='mailto:ahoy@openworklabs.com' />
         </Menu>
       </section>
       <section name='Made by OWL'>
         <Menu>
           <MenuItem display='flex' alignItems='center' my={[2, 3, 5]}>
             <IconGlif size={6} />
-            <Title my={0} mx={2}>
+
+            <Title my={0} mx={2} display='flex'>
               is an
               <LinkWrapper
                 href='https://www.openworklabs.com'
