@@ -84,3 +84,8 @@ export const InputLabelBase = styled.label`
   ${layout}
   ${space}
 `
+
+export const Subtitle = styled(Title)`
+  /* Used this: https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters */
+  font-size: calc(48px + (64 - 40) * (100vw - 360px) / (1440 - 360));
+`
