@@ -102,8 +102,8 @@ export default () => {
           <MenuItem></MenuItem>
 
           <Sentence sentenceStr='Glif is an interoperable set of tools' />
-          <Box py={3} mr='8%' px={2} borderRadius={4} border={1}>
-            <IconGlif size={[6, 7, 8]} />
+          <Box py={3} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
+            <IconGlif size={[6, 7, 8]} position='relative' fill='white' />
           </Box>
           <Sentence sentenceStr='for the Filecoin network.' />
           <MenuItem
@@ -240,7 +240,7 @@ export default () => {
           mb={9}
         >
           <SubtitleLogo color='white' text='Verify' imageUrl='/imgverify.png' />
-          <Sentence sentenceStr='Earn verified Filecoin storage when you verify yourself.' />
+          <Sentence sentenceStr='Earn "Verified" Filecoin storage when you verify yourself.' />
           <ExitLink linkName='Go' href='https://verify.glif.io' />
         </Menu>
       </section>
