@@ -37,6 +37,51 @@ const InputEmail = styled.input`
   ${color}
 `
 
+// To be paired with MiniGlifIcon
+const MiniGlifCopy = styled(Title)`
+  font-size: ${(props) => props.theme.fontSizes[6]};
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+`
+
+// To be used as a quicklink shortcut in the future
+const MiniGlifIcon = ({ backgroundImg }) => {
+  return (
+    <Box
+      borderRadius={3}
+      mx={2}
+      size={7}
+      css={`
+        background-position: center center;
+        background-size: cover;
+        background-image: url(${backgroundImg});
+      `}
+    ></Box>
+  )
+}
+
+// Example usage
+/* <MiniGlifCopy
+              fontSize={6}
+              css={`
+                -webkit-text-outline: 1px solid #444;
+              `}
+            >
+              VERIFY
+            </MiniGlifCopy> 
+  <Box
+            mr='8%'
+            width={['100%', 'auto']}
+            display='flex'
+            justifyContent='center'
+          >
+            <MiniGlifIcon backgroundImg='/imgtools.png' />
+            <MiniGlifIcon backgroundImg='/imgverify.png' />
+            <MiniGlifIcon backgroundImg='/imgnode.png' /> 
+  </Box>
+  */
+
+
 const Sentence = ({ sentenceStr }) => {
   return sentenceStr.split(' ').map((word, i) => {
     return (
@@ -93,15 +138,16 @@ export default () => {
     >
       <section name='Introduction'>
         <Menu
+          position='relative'
           display='flex'
           alignItems='center'
           justifyContent='center'
           flexWrap='wrap'
           mb={8}
         >
-          <MenuItem></MenuItem>
-
+         
           <Sentence sentenceStr='Glif is an interoperable set of tools' />
+        
           <Box py={3} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
             <IconGlif size={[6, 7, 8]} position='relative' fill='white' />
           </Box>
@@ -229,6 +275,23 @@ export default () => {
           />
           <Sentence sentenceStr='A lightweight interface for sending and receiving Filecoin.' />
           <ExitLink linkName='Go' href='https://wallet.glif.io' />
+        </Menu>
+      </section>
+      <section name='Glif Faucet'>
+        <Menu
+          display='flex'
+          alignItems='center'
+          justifyContent='flex-start'
+          flexWrap='wrap'
+          mb={9}
+        >
+          <SubtitleLogo
+            alt='Source: https://unsplash.com/photos/g2Zf3hJyYAc'
+            text='Faucet'
+            imageUrl='/imgfaucet.jpg'
+          />
+          <Sentence sentenceStr='Quickily, easily receive testnet Filecoin.' />
+          <ExitLink linkName='Go' href='https://faucet.glif.io' />
         </Menu>
       </section>
       <section name='Glif Verify'>
