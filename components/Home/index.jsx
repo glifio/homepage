@@ -15,7 +15,7 @@ const ButtonSignUp = styled.button`
   transition: 0.18s ease-in;
 
   &:hover {
-    transform:translateY(-5%);
+    transform: translateY(-5%);
   }
   ${space}
   ${layout}
@@ -81,7 +81,6 @@ const MiniGlifIcon = ({ backgroundImg }) => {
   </Box>
   */
 
-
 const Sentence = ({ sentenceStr }) => {
   return sentenceStr.split(' ').map((word, i) => {
     return (
@@ -104,7 +103,7 @@ export default () => {
   const postToMailChimp = async () => {
     try {
       const res = await axios.post(
-        `https://mailchimp-proxy.openworklabs.com/${email}`
+        `https://mailchimp-proxy.openworklabs.com?email=${email}`
       )
 
       if (res.data.indexOf('success') === -1) {
@@ -145,9 +144,8 @@ export default () => {
           flexWrap='wrap'
           mb={8}
         >
-         
           <Sentence sentenceStr='Glif is an interoperable set of tools' />
-        
+
           <Box py={3} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
             <IconGlif size={[6, 7, 8]} position='relative' fill='white' />
           </Box>
