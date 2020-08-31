@@ -146,8 +146,8 @@ export default () => {
         >
           <Sentence sentenceStr='Glif is an interoperable set of tools' />
 
-          <Box py={3} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
-            <IconGlif size={[6, 7, 8]} position='relative' fill='white' />
+          <Box py={4} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
+            <IconGlif size={[6, 7, 8]} p={2} position='relative' fill='white' />
           </Box>
           <Sentence sentenceStr='for the Filecoin network.' />
           <MenuItem
@@ -273,6 +273,24 @@ export default () => {
           />
           <Sentence sentenceStr='A lightweight interface for sending and receiving Filecoin.' />
           <ExitLink linkName='Go' href='https://wallet.glif.io' />
+        </Menu>
+      </section>
+      <section name='Glif SAFT'>
+        <Menu
+          display='flex'
+          alignItems='center'
+          justifyContent='flex-start'
+          flexWrap='wrap'
+          mb={9}
+        >
+          <SubtitleLogo
+            alt='Source: https://www.nontemporary.com/post/190437968500'
+            text='SAFT'
+            imageUrl='/imgsaft.png'
+            color='white'
+          />
+          <Sentence sentenceStr='Use your Ledger device to hold your Filecoin SAFT.' />
+          <ExitLink linkName='Go' href='https://wallet.glif.io/saft' />
         </Menu>
       </section>
       <section name='Glif Faucet'>

@@ -16,13 +16,14 @@ const SubtitleLogo = ({ alt, color, text, imageUrl }) => {
         display='flex'
         alignItems='center'
         justifyContent='space-between'
-        py={2}
+        py={4}
         mr={[0, 6]}
         mb={[3, 0]}
         px={3}
         borderRadius={4}
         width={['100%', 'auto']}
-        height={9}
+        minWidth={11}
+
         css={`
           background: url(${imageUrl}) center no-repeat;
           background-size: 100%;
