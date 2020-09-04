@@ -275,7 +275,7 @@ export default () => {
           <ExitLink linkName='Go' href='https://wallet.glif.io' />
         </Menu>
       </section>
-      <section name='Glif SAFT'>
+      <section name='Glif Vault'>
         <Menu
           display='flex'
           alignItems='center'
@@ -285,12 +285,12 @@ export default () => {
         >
           <SubtitleLogo
             alt='Source: https://www.nontemporary.com/post/190437968500'
-            text='SAFT'
+            text='Vault'
             imageUrl='/imgsaft.png'
             color='white'
           />
           <Sentence sentenceStr='Use your Ledger device to hold your Filecoin SAFT.' />
-          <ExitLink linkName='Go' href='https://wallet.glif.io/saft' />
+          <ExitLink linkName='Go' href='https://wallet.glif.io/vault' />
         </Menu>
       </section>
       <section name='Glif Faucet'>
