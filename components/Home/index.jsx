@@ -136,7 +136,7 @@ export default () => {
           <Box py={4} my={4} px={2} borderRadius={4} border={1} bg='black'>
             <IconGlif size={[7, 8]} p={2} position='relative' fill='white' />
           </Box>
-          <Title fontSize={[5,6]}>Glif is an interoperable set of tools for the Filecoin network</Title>
+          <Title textAlign='center' fontSize={[5,6]}>Glif is an interoperable set of tools for the Filecoin network</Title>
         </Menu>
       </section>
       <Box display="flex" flexWrap='wrap' justifyContent='space-around' mt={[4,6]}>
