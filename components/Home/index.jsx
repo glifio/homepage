@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { string } from 'prop-types'
 import styled from 'styled-components'
 import axios from 'axios'
-import { space, layout, typography, border, color } from 'styled-system'
-import { Box, Menu, MenuItem, Title, Text, IconGlif, Subtitle } from '../Shared'
+import { space, layout, typography, border, color, boxShadow } from 'styled-system'
+import { Box, InlineBox, Menu, MenuItem, Title, Text, IconGlif, Subtitle } from '../Shared'
 import SubtitleLogo from './SubtitleLogo'
 import ExitLink, { LinkWrapper } from './ExitLink'
 
@@ -37,62 +37,50 @@ const InputEmail = styled.input`
   ${color}
 `
 
-// To be paired with MiniGlifIcon
-const MiniGlifCopy = styled(Title)`
-  font-size: ${(props) => props.theme.fontSizes[6]};
-  color: transparent;
-  -webkit-text-stroke: 1px #000;
+
+const GlifCardLinkWrapper = styled.a`
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.24s ease-in-out;
+
+  &:hover {
+  transform:translate(8px, -8px);
+  }
 `
 
-// To be used as a quicklink shortcut in the future
-const MiniGlifIcon = ({ backgroundImg }) => {
+const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
   return (
+    <GlifCardLinkWrapper href={href} target="_blank">
     <Box
-      borderRadius={3}
-      mx={2}
-      size={7}
-      css={`
-        background-position: center center;
-        background-size: cover;
-        background-image: url(${backgroundImg});
-      `}
-    ></Box>
+          display='flex'
+          alignItems='center'
+          justifyContent='flex-start'
+          flexWrap='wrap'
+          maxWidth={13}
+          p={3}
+          my={[4,5]}
+          boxShadow={2}
+          borderRadius={4}
+        >
+          <SubtitleLogo
+            alt='Source: https://www.nontemporary.com/post/190437968500'
+            text='Wallet'
+            imageUrl={imageUrl}
+            fill={fill}
+          />
+          <Box>
+          <Title fontSize={[5,'4rem']} mt={[0,3]}>{title}</Title>
+          <Box display="flex">
+          <Title color='core.darkgray' fontSize={[4,5,6]} my={4}>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
+      {linkName} 
+        </InlineBox> </Title>    
+         
+        </Box>
+          </Box>
+        </Box>
+        </GlifCardLinkWrapper>
   )
-}
-
-// Example usage
-/* <MiniGlifCopy
-              fontSize={6}
-              css={`
-                -webkit-text-outline: 1px solid #444;
-              `}
-            >
-              VERIFY
-            </MiniGlifCopy> 
-  <Box
-            mr='8%'
-            width={['100%', 'auto']}
-            display='flex'
-            justifyContent='center'
-          >
-            <MiniGlifIcon backgroundImg='/imgtools.png' />
-            <MiniGlifIcon backgroundImg='/imgverify.png' />
-            <MiniGlifIcon backgroundImg='/imgnode.png' /> 
-  </Box>
-  */
-
-const Sentence = ({ sentenceStr }) => {
-  return sentenceStr.split(' ').map((word, i) => {
-    return (
-      <MenuItem key={i} mr='8%' my={[2, 3, 5]}>
-        <Subtitle>{word}</Subtitle>
-      </MenuItem>
-    )
-  })
-}
-
-Sentence.propTypes = {
-  sentenceStr: string.isRequired
 }
 
 export default () => {
@@ -142,22 +130,44 @@ export default () => {
           alignItems='center'
           justifyContent='center'
           flexWrap='wrap'
-          mb={8}
+          maxWidth={18}
+          margin='0 auto'
         >
-          <Sentence sentenceStr='Glif is an interoperable set of tools' />
-
-          <Box py={4} mr='8%' px={2} borderRadius={4} border={1} bg='black'>
-            <IconGlif size={[6, 7, 8]} p={2} position='relative' fill='white' />
+          <Box py={4} my={4} px={2} borderRadius={4} border={1} bg='black'>
+            <IconGlif size={[7, 8]} p={2} position='relative' fill='white' />
           </Box>
-          <Sentence sentenceStr='for the Filecoin network.' />
-          <MenuItem
+          <Title fontSize={[5,6]}>Glif is an interoperable set of tools for the Filecoin network</Title>
+        </Menu>
+      </section>
+      <Box display="flex" flexWrap='wrap' justifyContent='space-around' mt={[4,6]}>
+      <section name='Glif Wallet'>
+      <GlifCard imageUrl='/imgtools.png' title='Wallet' description='A lightweight interface for sending and receiving Filecoin.' href='https://wallet.glif.io' linkName='Go↗' />
+      </section>
+  
+      <section name='Glif Vault'>
+      <GlifCard imageUrl='/imgvault.png' fill='#fff' title='Vault' description='Use your Ledger device to hold your Filecoin SAFT.
+' href='https://wallet.glif.io/vault' linkName='Go↗' />
+      </section>
+
+      <section name='Glif Faucet'>
+      <GlifCard imageUrl='/imgfaucet.jpg' fill='#000' title='Faucet' description='Quickily, easily receive testnet Filecoin.' href='https://faucet.glif.io' linkName='Go↗' />
+      </section>
+      <section name='Glif Verify'>
+      <GlifCard imageUrl='/imgverify.png' fill='#fff' title='Verify' description='Earn "Verified" Filecoin storage when you verify yourself.' href='https://verify.glif.io' linkName='Go↗' />
+      </section>
+      <section name='Glif Node'>
+      <GlifCard imageUrl='/imgnode.png' fill='#fff' title='Nodes' description='Public and dedicated Filecoin node infrastructure.' href='mailto:squad@infinitescroll.org' linkName='Email Us↗' />
+      </section>
+      </Box>
+      <section name='Sign uuuup'>
+      <MenuItem
             display='flex'
             flexWrap='wrap'
             alignItems='baseline'
             justifyContent={['center', 'space-between']}
             width='100%'
             color='core.darkgray'
-            my={[2, 3]}
+            my={[2, 4, 8]}
           >
             {clicked ? (
               <>
@@ -236,8 +246,8 @@ export default () => {
               </>
             ) : (
               <>
-                <Text fontSize={[4, 5, 6]} my={2}>
-                  Be the first to learn when we launch
+                <Text fontSize={[4, 5, 6]} textAlign={['center', 'left']} my={2}>
+                  Be the first to learn when we launch new glifs
                 </Text>
 
                 <ButtonSignUp
@@ -256,100 +266,16 @@ export default () => {
               </>
             )}
           </MenuItem>
-        </Menu>
       </section>
-      <section name='Glif Wallet'>
-        <Menu
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          mb={9}
-        >
-          <SubtitleLogo
-            alt='Source: https://www.nontemporary.com/post/190437968500'
-            text='Wallet'
-            imageUrl='/imgtools.png'
-          />
-          <Sentence sentenceStr='A lightweight interface for sending and receiving Filecoin.' />
-          <ExitLink linkName='Go' href='https://wallet.glif.io' />
-        </Menu>
-      </section>
-      <section name='Glif Vault'>
-        <Menu
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          mb={9}
-        >
-          <SubtitleLogo
-            alt='Source: https://www.nontemporary.com/post/190437968500'
-            text='Vault'
-            imageUrl='/imgsaft.png'
-            color='white'
-          />
-          <Sentence sentenceStr='Use your Ledger device to hold your Filecoin SAFT.' />
-          <ExitLink linkName='Go' href='https://wallet.glif.io/vault' />
-        </Menu>
-      </section>
-      <section name='Glif Faucet'>
-        <Menu
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          mb={9}
-        >
-          <SubtitleLogo
-            alt='Source: https://unsplash.com/photos/g2Zf3hJyYAc'
-            text='Faucet'
-            imageUrl='/imgfaucet.jpg'
-          />
-          <Sentence sentenceStr='Quickily, easily receive testnet Filecoin.' />
-          <ExitLink linkName='Go' href='https://faucet.glif.io' />
-        </Menu>
-      </section>
-      <section name='Glif Verify'>
-        <Menu
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          mb={9}
-        >
-          <SubtitleLogo color='white' text='Verify' imageUrl='/imgverify.png' />
-          <Sentence sentenceStr='Earn "Verified" Filecoin storage when you verify yourself.' />
-          <ExitLink linkName='Go' href='https://verify.glif.io' />
-        </Menu>
-      </section>
-      <section name='Glif Node'>
-        <Menu
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          mb={9}
-        >
-          <SubtitleLogo
-            alt='Credit & Source: https://www.nontemporary.com/post/187451107349/rob-nick-carter'
-            imageUrl='/imgnode.png'
-            text='Nodes'
-          />
-
-          <Sentence sentenceStr='Public and dedicated Filecoin node infrastructure.' />
-          <ExitLink linkName='Email Us' href='mailto:ahoy@openworklabs.com' />
-        </Menu>
-      </section>
-      <section name='Made by OWL'>
-        <Menu>
-          <MenuItem display='flex' alignItems='center' my={[2, 3, 5]}>
-            <IconGlif size={6} />
-
-            <Title my={0} mx={2} display='flex'>
-              is an
+      <section name='Made by IS'>
+        <Box display='flex' alignItems='center' flexGrow='1' width='100%' mt={6} mb={3}>
+         
+          <IconGlif size={6} />
+            <Title fontSize={4} my={0} mx={2}>
+              is part of the
               <LinkWrapper
-                href='https://www.openworklabs.com'
+                display="inline-block"
+                href='https://www.infinitescroll.org'
                 borderBottom={1}
                 borderWidth={3}
                 fontSize={4}
@@ -365,12 +291,11 @@ export default () => {
                   }
                 `}
               >
-                OWL
+                Infinite Scroll
               </LinkWrapper>
-              project {'\u00A9'} 2020
+               {'\u00A9'} 2020
             </Title>
-          </MenuItem>
-        </Menu>
+        </Box>
       </section>
     </Box>
   )
