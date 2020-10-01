@@ -5,7 +5,7 @@ import axios from 'axios'
 import { space, layout, typography, border, color, boxShadow } from 'styled-system'
 import { Box, InlineBox, Menu, MenuItem, Title, Text, IconGlif, Subtitle } from '../Shared'
 import SubtitleLogo from './SubtitleLogo'
-import ExitLink, { LinkWrapper } from './ExitLink'
+import { StyledATag } from '../Shared/Link'
 
 const ButtonSignUp = styled.button`
   outline: none;
@@ -273,7 +273,7 @@ export default () => {
           <IconGlif size={6} />
             <Title fontSize={4} my={0} mx={2}>
               is part of the
-              <LinkWrapper
+              <StyledATag
                 display="inline-block"
                 href='https://www.infinitescroll.org'
                 borderBottom={1}
@@ -281,18 +281,9 @@ export default () => {
                 fontSize={4}
                 mx={1}
                 target='_blank'
-                css={`
-                  &:hover {
-                    color: #0051ff;
-                    background: transparent;
-                  }
-                  ::before {
-                    border: 0;
-                  }
-                `}
               >
                 Infinite Scroll
-              </LinkWrapper>
+              </StyledATag>
                {'\u00A9'} 2020
             </Title>
         </Box>
