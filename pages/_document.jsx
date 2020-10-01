@@ -37,11 +37,11 @@ export default class MyDocument extends Document {
           />
           <meta
             name='description'
-            content='A Filecoin web wallet, made by Open Work Labs.'
+            content='An interoperable set of tools for the Filecoin network. Part of the Infinite Scroll.'
           />
           <meta
             name='keywords'
-            content='Filecoin,Wallet,Web,Storage,Blockchain'
+            content='Filecoin,Wallet,Web,Storage,Blockchain, FIL'
           />
           <meta property='og:image' content='static/imgnode.png' />
           <link
