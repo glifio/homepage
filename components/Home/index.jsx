@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { string } from 'prop-types'
 import styled from 'styled-components'
 import axios from 'axios'
-import { space, layout, typography, border, color, boxShadow } from 'styled-system'
+import { space, layout, typography, border, color, boxShadow, flexbox } from 'styled-system'
 import { Box, InlineBox, Menu, MenuItem, Title, Text, IconGlif, Subtitle } from '../Shared'
 import SubtitleLogo from './SubtitleLogo'
 import { StyledATag } from '../Shared/Link'
@@ -43,6 +43,11 @@ const GlifCardLinkWrapper = styled.a`
   text-decoration: none;
   color: inherit;
   transition: 0.24s ease-in-out;
+  ${space}
+  ${layout}
+  ${border} 
+  ${boxShadow}
+  ${flexbox}
 
   &:hover {
   transform:translate(8px, -8px);
@@ -51,18 +56,16 @@ const GlifCardLinkWrapper = styled.a`
 
 const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
   return (
-    <GlifCardLinkWrapper href={href} target="_blank">
-    <Box
-          display='flex'
-          alignItems='center'
-          justifyContent='flex-start'
-          flexWrap='wrap'
-          maxWidth={13}
-          p={3}
-          my={[4,5]}
-          boxShadow={2}
-          borderRadius={4}
-        >
+    <GlifCardLinkWrapper href={href} target="_blank"  display='flex'
+    alignItems='center'
+    justifyContent='flex-start'
+    flexWrap='wrap'
+    maxWidth={13}
+    p={3}
+    my={[4,5]}
+    boxShadow={2}
+    borderRadius={4}>
+ 
           <SubtitleLogo
             alt='Source: https://www.nontemporary.com/post/190437968500'
             text='Wallet'
@@ -78,7 +81,7 @@ const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
          
         </Box>
           </Box>
-        </Box>
+
         </GlifCardLinkWrapper>
   )
 }
@@ -246,7 +249,7 @@ export default () => {
               </>
             ) : (
               <>
-                <Text fontSize={[4, 5, 6]} textAlign={['center', 'left']} my={2}>
+                <Text fontSize={[4, 5, 6]} textAlign='center' my={2}>
                   Be the first to learn when we launch new glifs
                 </Text>
 
