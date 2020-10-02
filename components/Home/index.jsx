@@ -70,9 +70,9 @@ const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
             fill={fill}
           />
           <Box>
-          <Title fontSize={[5,'4rem']} mt={[0,3]}>{title}</Title>
+          <Title fontSize={6} mt={[0,3]}>{title}</Title>
           <Box display="flex">
-          <Title color='core.darkgray' fontSize={[4,5,6]} my={4}>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
+          <Title color='core.darkgray' fontSize={[4,5,'2.5rem']} my={4}>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
       {linkName} 
         </InlineBox> </Title>    
          
