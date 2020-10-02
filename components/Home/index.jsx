@@ -75,7 +75,7 @@ const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
           <Box>
           <Title fontSize={6} mt={[0,3]}>{title}</Title>
           <Box display="flex">
-          <Title color='core.darkgray' fontSize={[4,5,'2.5rem']} my={4}>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
+          <Title color='core.darkgray' fontSize={[4,5,'2.5rem']} my={4} letterSpacing='0.015rem'>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
       {linkName} 
         </InlineBox> </Title>    
          
@@ -142,7 +142,9 @@ export default () => {
           <Title textAlign='center' fontSize={[5,6]}>Glif is an interoperable set of tools for the Filecoin network</Title>
         </Menu>
       </section>
+      
       <Box display="flex" flexWrap='wrap' justifyContent='space-around' mt={[4,6]}>
+      
       <section name='Glif Wallet'>
       <GlifCard imageUrl='/imgtools.png' title='Wallet' description='A lightweight interface for sending and receiving Filecoin.' href='https://wallet.glif.io' linkName='Go↗' />
       </section>
@@ -155,13 +157,17 @@ export default () => {
       <section name='Glif Faucet'>
       <GlifCard imageUrl='/imgfaucet.jpg' fill='#000' title='Faucet' description='Quickily, easily receive testnet Filecoin.' href='https://faucet.glif.io' linkName='Go↗' />
       </section>
+
       <section name='Glif Verify'>
       <GlifCard imageUrl='/imgverify.png' fill='#fff' title='Verify' description='Earn "Verified" Filecoin storage when you verify yourself.' href='https://verify.glif.io' linkName='Go↗' />
       </section>
+
       <section name='Glif Node'>
       <GlifCard imageUrl='/imgnode.png' fill='#fff' title='Nodes' description='Public and dedicated Filecoin node infrastructure.' href='mailto:squad@infinitescroll.org' linkName='Email Us↗' />
       </section>
+
       </Box>
+
       <section name='Sign uuuup'>
       <MenuItem
             display='flex'
