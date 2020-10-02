@@ -75,7 +75,7 @@ const GlifCard = ({title, fill, description, imageUrl, href, linkName}) => {
           <Box>
           <Title fontSize={6} mt={[0,3]}>{title}</Title>
           <Box display="flex">
-          <Title color='core.darkgray' fontSize={[4,5,'2.5rem']} my={4} letterSpacing='0.015rem'>{description}  <InlineBox fontSize={[4,5,6]} color='#0051ff'>
+          <Title color='core.darkgray' fontSize={[5,'2.5rem']} my={4} letterSpacing='0.015rem'>{description}  <InlineBox fontSize={[5,6]} color='#0051ff'>
       {linkName} 
         </InlineBox> </Title>    
          
