@@ -167,7 +167,7 @@ export default () => {
             <IconGlif size={[7, 8]} p={2} position='relative' fill='white' />
           </Box>
           <Title textAlign='center' fontSize={[5, 6]}>
-            Glif is an interoperable set of tools for the Filecoin network
+            Glifs are interoperable tools for the Filecoin network
           </Title>
         </Menu>
       </section>
@@ -200,13 +200,13 @@ export default () => {
           />
         </section>
 
-        <section name='Glif Faucet'>
+        <section name='Glif Modules'>
           <GlifCard
             imageUrl='/imgfaucet.jpg'
             fill='#000'
-            title='Faucet'
-            description='Quickily, easily receive testnet Filecoin.'
-            href='https://faucet.glif.io'
+            title='Modules'
+            description='A set of JavaScript tools to easily begin building on Filecoin'
+            href='https://github.com/glifio/modules'
             linkName='Go↗'
           />
         </section>
