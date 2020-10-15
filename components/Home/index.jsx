@@ -205,7 +205,7 @@ export default () => {
             imageUrl='/imgfaucet.jpg'
             fill='#000'
             title='Modules'
-            description='A set of JavaScript tools to easily begin building on Filecoin'
+            description='A set of JavaScript tools to easily begin building on Filecoin.'
             href='https://github.com/glifio/modules'
             linkName='Go↗'
           />
