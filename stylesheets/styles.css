@@ -13,19 +13,19 @@ body {
 
 @font-face {
   font-family: 'RT-Alias-Medium';
-  src: url('/fonts/RTAliasMedium-Light.woff2');
+  src: url('/public/fonts/RTAliasMedium-Light.woff2');
   font-weight: 200;
 }
 
 @font-face {
   font-family: 'RT-Alias-Medium';
-  src: url('/fonts/RTAliasMedium-Regular.woff2');
+  src: url('/public/fonts/RTAliasMedium-Regular.woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'RT-Alias-Medium';
-  src: url('/fonts/RTAliasMedium-Bold.woff2');
+  src: url('/public/fonts/RTAliasMedium-Bold.woff2');
   font-weight: 700;
 }
 
@@ -33,18 +33,18 @@ body {
 
 @font-face {
   font-family: 'RT-Alias-Grotesk';
-  src: url('/fonts/RTAliasGrotesk-Light.woff2');
+  src: url('/public/fonts/RTAliasGrotesk-Light.woff2');
   font-weight: 200;
 }
 
 @font-face {
   font-family: 'RT-Alias-Grotesk';
-  src: url('/fonts/RTAliasGrotesk-Regular.woff2');
+  src: url('/public/fonts/RTAliasGrotesk-Regular.woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'RT-Alias-Grotesk';
-  src: url('/fonts/RTAliasGrotesk-Bold.woff2');
+  src: url('/public/fonts/RTAliasGrotesk-Bold.woff2');
   font-weight: 700;
 }
