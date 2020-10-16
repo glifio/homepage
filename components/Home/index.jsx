@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { string } from 'prop-types'
 import styled from 'styled-components'
 import axios from 'axios'
 import {
@@ -66,14 +65,23 @@ const GlifCardLinkWrapper = styled.a`
   ${flexbox}
 
   &:hover {
-    transform: translate(8px, -8px);
+    transform: ${({ comingSoon }) => !comingSoon && `translate(8px, -8px);`};
+    cursor: ${({ comingSoon }) => (comingSoon ? 'not-allowed' : 'pointer')};
   }
 `
 
-const GlifCard = ({ title, fill, description, imageUrl, href, linkName }) => {
+const GlifCard = ({
+  title,
+  fill,
+  description,
+  imageUrl,
+  href,
+  linkName,
+  comingSoon
+}) => {
   return (
     <GlifCardLinkWrapper
-      href={href}
+      href={comingSoon ? undefined : href}
       target='_blank'
       display='flex'
       alignItems='center'
@@ -84,6 +92,7 @@ const GlifCard = ({ title, fill, description, imageUrl, href, linkName }) => {
       my={[4, 5]}
       boxShadow={2}
       borderRadius={4}
+      comingSoon={comingSoon}
     >
       <SubtitleLogo
         alt='Source: https://www.nontemporary.com/post/190437968500'
@@ -104,7 +113,7 @@ const GlifCard = ({ title, fill, description, imageUrl, href, linkName }) => {
           >
             {description}{' '}
             <InlineBox fontSize={[5, 6]} color='#0051ff'>
-              {linkName}
+              {comingSoon ? 'Coming soon' : linkName}
             </InlineBox>{' '}
           </Title>
         </Box>
@@ -211,17 +220,6 @@ export default () => {
           />
         </section>
 
-        <section name='Glif Verify'>
-          <GlifCard
-            imageUrl='/imgverify.png'
-            fill='#fff'
-            title='Verify'
-            description='Receive verified Filecoin storage.'
-            href='https://verify.glif.io'
-            linkName='Go↗'
-          />
-        </section>
-
         <section name='Glif Node'>
           <GlifCard
             imageUrl='/imgnode.png'
@@ -230,6 +228,18 @@ export default () => {
             description='Public and dedicated Filecoin node infrastructure.'
             href='mailto:squad@infinitescroll.org'
             linkName='Email Us↗'
+          />
+        </section>
+
+        <section name='Glif Verify'>
+          <GlifCard
+            imageUrl='/imgverify.png'
+            fill='#fff'
+            title='Verify'
+            description='Receive verified Filecoin storage.'
+            href='https://verify.glif.io'
+            linkName='Go↗'
+            comingSoon
           />
         </section>
       </Box>
