@@ -239,7 +239,6 @@ export default () => {
             description='Receive verified Filecoin storage.'
             href='https://verify.glif.io'
             linkName='Go↗'
-            comingSoon
           />
         </section>
       </Box>
