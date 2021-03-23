@@ -123,6 +123,7 @@ const GlifCard = ({
 }
 
 export default () => {
+  var date = new Date();
   const [clicked, setClicked] = useState(false)
   const [error, setError] = useState('')
   const [subscribed, setSubscribed] = useState(false)
@@ -372,7 +373,7 @@ export default () => {
             >
               Infinite Scroll
             </StyledATag>
-            {'\u00A9'} 2020
+            {'\u00A9'} {date.getFullYear()}
           </Title>
         </Box>
       </section>
