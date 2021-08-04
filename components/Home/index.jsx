@@ -123,7 +123,7 @@ const GlifCard = ({
 }
 
 export default () => {
-  var date = new Date();
+  var date = new Date()
   const [clicked, setClicked] = useState(false)
   const [error, setError] = useState('')
   const [subscribed, setSubscribed] = useState(false)
@@ -221,14 +221,14 @@ export default () => {
           />
         </section>
 
-        <section name='Glif Node'>
+        <section name='Glif Nodes'>
           <GlifCard
             imageUrl='/imgnode.png'
             fill='#fff'
             title='Nodes'
             description='Public and dedicated Filecoin node infrastructure.'
-            href='mailto:squad@infinitescroll.org'
-            linkName='Email Us↗'
+            href='https://docs.filecoin.io/build/hosted-lotus/'
+            linkName='Go↗'
           />
         </section>
 
