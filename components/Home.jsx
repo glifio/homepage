@@ -22,12 +22,16 @@ const TextBox = styled.div`
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: ${devices.tablet}) {
-    padding: 80px;
+  @media (max-width: ${devices.phone}) {
+    padding: ${space('large', 'phone')};
+  }
+
+  @media (min-width: ${devices.gt.phone}) and (max-width: ${devices.tablet}) {
+    padding: 40px ${space('large', 'tablet')};
   }
 
   @media (min-width: ${devices.gt.tablet}) {
-    padding: 80px 40px;
+    padding: 80px ${space('large', 'desktop')};
   }
 `
 
@@ -56,11 +60,11 @@ const BoxStyled = styled(Box)`
 `
 
 const AppTilesWrapperStyled = styled(AppTilesWrapper)`
-  max-width: maxWidth;
-  margin-left: 'auto';
-  margin-right: 'auto';
+  max-width: ${maxWidth};
+  margin-left: auto;
+  margin-right: auto;
 
-  @media (max-width: ${devices.phone}) {
+  @media (max-width: ${devices.tablet}) {
     width: calc(100% + (${space('default', 'phone')} * 2));
     margin-left: calc(${space('default', 'phone')}*-1);
   }
