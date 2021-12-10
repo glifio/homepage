@@ -7,8 +7,9 @@ import {
   Footer,
   P,
   fontSize,
-  margin,
+  space,
   devices,
+  maxWidth,
   theme
 } from '@glif/react-components'
 import styled from 'styled-components'
@@ -16,7 +17,7 @@ import styled from 'styled-components'
 const TextBox = styled.div`
   font-size: ${fontSize('large')};
   border-radius: 8px;
-  margin-top: ${margin()};
+  margin-top: ${space()};
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -48,7 +49,13 @@ export default function AppsHome() {
   return (
     <Box padding={3}>
       <AppHeader />
-      <AppTilesWrapper>
+      <AppTilesWrapper
+        style={{
+          maxWidth: maxWidth,
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }}
+      >
         <AppTile
           title='Wallet'
           description='A lightweight interface for sending Filecoin.'
@@ -71,7 +78,7 @@ export default function AppsHome() {
           imgSrc='/bg-safe.png'
           small
         />
-        <AppTile
+        {/*         <AppTile
           title='Transaction History'
           description='A Filecoin notary service.'
           href='https://transaction-history.beta.glif.io'
@@ -93,23 +100,8 @@ export default function AppsHome() {
           imgSrc='/bg-safe.png'
           small
           soon
-        />
+        /> */}
       </AppTilesWrapper>
-      <TextBox
-        style={{
-          color: 'white',
-          background: theme.colors.core.primary
-        }}
-      >
-        <StyledText>
-          Glif offers a suite of interoperable tools for the{' '}
-          <a href='#' target='_blank'>
-            Filecoin
-          </a>{' '}
-          network. With these tools, people can store, permission, and trade
-          their data in healthy and equitable ways.
-        </StyledText>
-      </TextBox>
       <TextBox>
         <StyledText>
           Instead of the fortress, there are numerous fortresses now, and
@@ -128,6 +120,23 @@ export default function AppsHome() {
           allegiance. (soon)
         </StyledText>
       </TextBox>
+
+      <TextBox
+        style={{
+          color: 'white',
+          background: theme.colors.core.primary
+        }}
+      >
+        <StyledText>
+          Glif offers a suite of interoperable tools for the{' '}
+          <a href='#' target='_blank'>
+            Filecoin
+          </a>{' '}
+          network. With these tools, people can store, permission, and trade
+          their data in healthy and equitable ways.
+        </StyledText>
+      </TextBox>
+
       <Footer />
     </Box>
   )
