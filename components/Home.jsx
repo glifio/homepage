@@ -45,17 +45,32 @@ const StyledText = styled(P)`
   }
 `
 
+const BoxStyled = styled(Box)`
+  @media (max-width: ${devices.phone}) {
+    padding: ${space('default', 'phone')};
+  }
+
+  @media (min-width: ${devices.gt.phone}) {
+    padding: ${space()};
+  }
+`
+
+const AppTilesWrapperStyled = styled(AppTilesWrapper)`
+  max-width: maxWidth;
+  margin-left: 'auto';
+  margin-right: 'auto';
+
+  @media (max-width: ${devices.phone}) {
+    width: calc(100% + (${space('default', 'phone')} * 2));
+    margin-left: calc(${space('default', 'phone')}*-1);
+  }
+`
+
 export default function AppsHome() {
   return (
-    <Box padding={3}>
+    <BoxStyled>
       <AppHeader />
-      <AppTilesWrapper
-        style={{
-          maxWidth: maxWidth,
-          marginLeft: 'auto',
-          marginRight: 'auto'
-        }}
-      >
+      <AppTilesWrapperStyled>
         <AppTile
           title='Sender'
           oldTileName='Wallet'
@@ -102,7 +117,7 @@ export default function AppsHome() {
           small
           soon
         /> */}
-      </AppTilesWrapper>
+      </AppTilesWrapperStyled>
       <TextBox>
         <StyledText>
           Instead of the fortress, there are numerous fortresses now, and
@@ -139,6 +154,6 @@ export default function AppsHome() {
       </TextBox>
 
       <Footer />
-    </Box>
+    </BoxStyled>
   )
 }
