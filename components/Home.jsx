@@ -57,10 +57,11 @@ export default function AppsHome() {
         }}
       >
         <AppTile
-          title='Wallet'
+          title='Sender'
+          oldTileName='Wallet'
           description='A lightweight interface for sending Filecoin.'
           href='https://wallet.beta.glif.io'
-          imgSrc='/bg-wallet.png'
+          imgSrc='/bg-sender.jpg'
           small
         />
         <AppTile
@@ -68,14 +69,14 @@ export default function AppsHome() {
           oldTileName='Vault'
           description='A lightweight interface for sending Filecoin.'
           href='https://safe.beta.glif.io'
-          imgSrc='/bg-wallet.png'
+          imgSrc='/bg-safe.jpg'
           small
         />
         <AppTile
           title='Verify'
           description='A Filecoin notary service.'
           href='https://verify.glif.io'
-          imgSrc='/bg-safe.png'
+          imgSrc='/bg-verifier.jpg'
           small
         />
         {/*         <AppTile
