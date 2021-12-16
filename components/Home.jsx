@@ -41,10 +41,10 @@ const StyledText = styled(P)`
 
   > a {
     font-size: inherit;
-    color: inherit;
 
     &:hover {
       text-decoration: none;
+      color: inherit;
     }
   }
 `
@@ -78,17 +78,19 @@ export default function AppsHome() {
         <AppTile
           title='Sender'
           oldTileName='Wallet'
-          description='A lightweight interface for sending Filecoin.'
+          description='A lightweight interface for sending and receiving Filecoin.'
           href='https://wallet.beta.glif.io'
           imgSrc='/bg-sender.jpg'
+          imgSrcHover='/bg-sender-hover.jpg'
           small
         />
         <AppTile
           title='Safe'
           oldTileName='Vault'
-          description='A lightweight interface for sending Filecoin.'
+          description='A Filecoin multisig wallet.'
           href='https://safe.beta.glif.io'
           imgSrc='/bg-safe.jpg'
+          imgSrcHover='/bg-safe-hover.jpg'
           small
         />
         <AppTile
@@ -96,31 +98,9 @@ export default function AppsHome() {
           description='A Filecoin notary service.'
           href='https://verify.glif.io'
           imgSrc='/bg-verifier.jpg'
+          imgSrcHover='/bg-verifier-hover.jpg'
           small
         />
-        {/*         <AppTile
-          title='Transaction History'
-          description='A Filecoin notary service.'
-          href='https://transaction-history.beta.glif.io'
-          imgSrc='/bg-safe.png'
-          small
-        />
-        <AppTile
-          title='DeFi'
-          description='A Filecoin notary service.'
-          href='https://transaction-history.beta.glif.io'
-          imgSrc='/bg-safe.png'
-          small
-          soon
-        />
-        <AppTile
-          title='Storage'
-          description='A Filecoin notary service.'
-          href='https://transaction-history.beta.glif.io'
-          imgSrc='/bg-safe.png'
-          small
-          soon
-        /> */}
       </AppTilesWrapperStyled>
       <TextBox>
         <StyledText>
