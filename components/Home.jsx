@@ -26,11 +26,11 @@ const TextBox = styled.div`
     padding: ${space('large', 'phone')};
   }
 
-  @media (min-width: ${devices.gt.phone}) and (max-width: ${devices.tablet}) {
+  @media (min-width: ${devices.phone}) and (max-width: ${devices.tablet}) {
     padding: 40px ${space('large', 'tablet')};
   }
 
-  @media (min-width: ${devices.gt.tablet}) {
+  @media (min-width: ${devices.tablet}) {
     padding: 80px ${space('large', 'desktop')};
   }
 `
@@ -54,7 +54,7 @@ const BoxStyled = styled(Box)`
     padding: ${space('default', 'phone')};
   }
 
-  @media (min-width: ${devices.gt.phone}) {
+  @media (min-width: ${devices.phone}) {
     padding: ${space()};
   }
 `
