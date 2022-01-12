@@ -55,12 +55,13 @@ class MyApp extends App {
             sizes='16x16'
             href='/favicon-32x32.png'
           />
-          <Script
-            type='application/ld+json'
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
-          />
         </Head>
+        <Script
+          id='json-ld'
+          type='application/ld+json'
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
+        />
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />
         </ThemeProvider>
