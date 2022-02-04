@@ -22,7 +22,7 @@ class MyApp extends App {
             name='keywords'
             content='Filecoin,Wallet,Web,Storage,Blockchain,Crypto,FIL'
           />
-          <meta property='og:title' content='Glif' />{' '}
+          <meta property='og:title' content='Glif' />
           <meta
             property='og:description'
             content='Interoperable tools for the Filecoin network'

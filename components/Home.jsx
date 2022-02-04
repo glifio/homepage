@@ -13,6 +13,7 @@ import {
   theme
 } from '@glif/react-components'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
 const TextBox = styled.div`
   font-size: ${fontSize('large')};
@@ -71,15 +72,20 @@ const AppTilesWrapperStyled = styled(AppTilesWrapper)`
 `
 
 export default function AppsHome() {
+  const router = useRouter()
   return (
     <BoxStyled>
-      <AppHeader />
+      <AppHeader
+        homeHref=''
+        blogHref='https://blog.glif.io'
+        codeHref='https://github.com/glifio/'
+        nodesHref='https://lotus.filecoin.io/docs/developers/hosted-lotus/'
+      />
       <AppTilesWrapperStyled>
         <AppTile
-          title='Sender'
-          oldTileName='Wallet'
+          title='Wallet'
           description='A lightweight interface for sending and receiving Filecoin.'
-          href='https://wallet.beta.glif.io'
+          href={process.env.NEXT_PUBLIC_WALLET_HREF}
           imgSrc='/bg-sender.jpg'
           imgSrcHover='/bg-sender-hover.jpg'
           small
@@ -87,16 +93,25 @@ export default function AppsHome() {
         <AppTile
           title='Safe'
           oldTileName='Vault'
-          description='A Filecoin multisig wallet.'
-          href='https://safe.beta.glif.io'
+          description='A Filecoin multisig.'
+          href={process.env.NEXT_PUBLIC_SAFE_HREF}
           imgSrc='/bg-safe.jpg'
           imgSrcHover='/bg-safe-hover.jpg'
           small
         />
         <AppTile
+          title='Explorer'
+          beta
+          description='A Filecoin network explorer.'
+          href={process.env.NEXT_PUBLIC_EXPLORER_HREF}
+          imgSrc='/bg-explorer.jpg'
+          imgSrcHover='/bg-explorer-hover.jpg'
+          small
+        />
+        <AppTile
           title='Verify'
           description='A Filecoin notary service.'
-          href='https://verify.glif.io'
+          href={process.env.NEXT_PUBLIC_VERIFIER_HREF}
           imgSrc='/bg-verifier.jpg'
           imgSrcHover='/bg-verifier-hover.jpg'
           small
