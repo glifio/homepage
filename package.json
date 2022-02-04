@@ -12,6 +12,7 @@
     "docker-run": "docker run --detach -p 5000:5000 --name glif-home --restart always glif/homepage"
   },
   "dependencies": {
+    "@glif/base-css": "^0.0.1",
     "@glif/react-components": "^2.0.0-alpha.16",
     "axios": "^0.21.1",
     "next": "^12.0.4",
@@ -22,10 +23,10 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.1",
     "babel-jest": "^25.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "jest": "^25.1.0",
     "jest-styled-components": "^7.0.2"
   }

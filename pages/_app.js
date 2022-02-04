@@ -1,11 +1,10 @@
+import '@glif/base-css'
 import App from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
 import { theme, ThemeProvider } from '@glif/react-components'
 
 import JSONLD from '../JSONLD'
-import '../stylesheets/normalize.css'
-import '../stylesheets/styles.css'
 
 class MyApp extends App {
   render() {
