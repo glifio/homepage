@@ -1,15 +1,15 @@
 {
   "name": "glif-homepage",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT-5000}",
+    "export": "next build && next export",
+    "serve": "npx serve ./out",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "docker-build": "docker build --no-cache -t glif/homepage:latest .",
-    "docker-run": "docker run --detach -p 5000:5000 --name glif-home --restart always glif/homepage"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@glif/base-css": "^0.0.1",
