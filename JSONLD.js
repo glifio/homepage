@@ -1,19 +1,17 @@
 export default {
   '@type': 'WebApplication',
   name: 'Glif',
-  description:
-    'A set of tools for the Filecoin network, made by Infinite Scroll.',
-  url: 'https://glif.io',
+  description: 'Interoperable tools for the Filecoin network.',
+  url: 'https://apps.glif.io',
   sameAs: ['https://github.com/glifio'],
   owns: [
     {
       '@type': 'WebApplication',
-      name: 'Glif Wallet',
-      description:
-        'A web wallet to manage your Filecoin on your Ledger device.',
+      name: 'Glif Sender',
+      description: 'A web wallet to manage your Filecoin.',
       applicationCategory: 'Cryptocurrency wallet',
       operatingSystem: 'All',
-      url: 'https://wallet.glif.io'
+      url: 'https://sender.glif.io'
     },
     {
       '@type': 'WebApplication',
@@ -24,18 +22,11 @@ export default {
     },
     {
       '@type': 'WebApplication',
-      name: 'Glif Vault',
-      description: 'Use your Ledger device to hold your Filecoin SAFT.',
+      name: 'Glif Safe',
+      description: 'An interface for managing Filecoin multisig wallets.',
       applicationCategory: 'Cryptocurrency wallet',
-      operatingSystem: 'All'
-    },
-    {
-      '@type': 'WebApplication',
-      name: 'Glif Faucet',
-      description: 'Quickly, easily receive Filecoin to test and develop with.',
-      applicationCategory: 'Cryptocurrency faucet',
       operatingSystem: 'All',
-      url: 'https://faucet.glif.io'
+      url: 'https://safe.glif.io'
     },
     {
       '@type': 'WebApplication',
@@ -59,16 +50,5 @@ export default {
       name: 'Ledger SAS',
       url: 'https://www.ledger.com/'
     }
-  ],
-  parentOrganization: {
-    '@type': 'Organization',
-    name: 'Infinite Scroll',
-    description: 'Self-sustaining systems for the worlds to come.',
-    url: 'https://infinitescroll.org',
-    sameAs: [
-      'https://github.com/infinitescroll',
-      'https://twitter.com/infinitescroll_',
-      'https://www.are.na/infinite-scroll'
-    ]
-  }
+  ]
 }
