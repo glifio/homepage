@@ -18,6 +18,7 @@ const webpack = (config) => {
 
 module.exports = () => {
   return {
+    trailingSlash: true,
     webpack,
     env: {
       NEXT_PUBLIC_WALLET_HREF:

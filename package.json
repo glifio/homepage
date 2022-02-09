@@ -8,6 +8,7 @@
     "start": "next start -p ${PORT-5000}",
     "export": "next build && next export",
     "serve": "npx serve ./out",
+    "store-ipfs": "npx @glif/deployment-cli ipfs ./out $WEB3_STORAGE_TOKEN",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -23,6 +24,7 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
+    "@glif/deployment-cli": "^2.0.0-alpha.16",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.1",
     "babel-jest": "^25.1.0",
