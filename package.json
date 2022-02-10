@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@glif/base-css": "^0.0.1",
-    "@glif/react-components": "^2.0.0-alpha.36",
+    "@glif/react-components": "^2.0.0-alpha.42",
     "axios": "^0.21.1",
     "next": "^12.0.4",
     "node-fetch": ">=2.6.1",

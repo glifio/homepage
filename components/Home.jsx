@@ -144,7 +144,7 @@ export default function AppsHome() {
       >
         <StyledText>
           Glif offers a suite of interoperable tools for the{' '}
-          <a href='#' target='_blank'>
+          <a href='https://filecoin.io/' target='_blank'>
             Filecoin
           </a>{' '}
           network. With these tools, people can store, permission, and trade
