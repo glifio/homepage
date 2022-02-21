@@ -72,7 +72,6 @@ const AppTilesWrapperStyled = styled(AppTilesWrapper)`
 `
 
 export default function AppsHome() {
-  const router = useRouter()
   return (
     <BoxStyled>
       <AppHeader
