@@ -1,0 +1,19 @@
+name = "glif-apps"
+type = "webpack"
+route = ''
+zone_id = '28db60a97266a8163a498a6d20046a9e'
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./out",entry-point = "workers-site"}
+compatibility_date = "2022-02-21"
+
+[env.calibration]
+name = "apps-calibration"
+vars = { ENVIRONMENT = "calibration" }
+route = 'apps-calibration.glif.link/*'
+
+[env.mainnet]
+name = "apps-mainnet"
+vars = { ENVIRONMENT = "production" }
+route = 'apps.glif.link/*'
