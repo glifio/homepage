@@ -13,8 +13,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@glif/base-css": "^0.0.1",
-    "@glif/react-components": "^2.0.0-alpha.42",
+    "@glif/base-css": "^0.0.5",
+    "@glif/react-components": "^2.0.0-alpha.45",
     "axios": "^0.21.1",
     "next": "^12.1.0",
     "node-fetch": ">=2.6.1",
