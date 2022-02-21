@@ -84,7 +84,7 @@ export default function AppsHome() {
         <AppTile
           title='Wallet'
           description='A lightweight interface for sending and receiving Filecoin.'
-          href={process.env.NEXT_PUBLIC_WALLET_HREF}
+          href={process.env.NEXT_PUBLIC_WALLET_URL}
           imgSrc='/bg-sender.jpg'
           imgSrcHover='/bg-sender-hover.jpg'
           small
@@ -93,7 +93,7 @@ export default function AppsHome() {
           title='Safe'
           oldTileName='Vault'
           description='A Filecoin multisig.'
-          href={process.env.NEXT_PUBLIC_SAFE_HREF}
+          href={process.env.NEXT_PUBLIC_SAFE_URL}
           imgSrc='/bg-safe.jpg'
           imgSrcHover='/bg-safe-hover.jpg'
           small
@@ -102,7 +102,7 @@ export default function AppsHome() {
           title='Explorer'
           beta
           description='A Filecoin network explorer.'
-          href={process.env.NEXT_PUBLIC_EXPLORER_HREF}
+          href={process.env.NEXT_PUBLIC_EXPLORER_URL}
           imgSrc='/bg-explorer.jpg'
           imgSrcHover='/bg-explorer-hover.jpg'
           small
@@ -110,7 +110,7 @@ export default function AppsHome() {
         <AppTile
           title='Verify'
           description='A Filecoin notary service.'
-          href={process.env.NEXT_PUBLIC_VERIFIER_HREF}
+          href={process.env.NEXT_PUBLIC_VERIFIER_URL}
           imgSrc='/bg-verifier.jpg'
           imgSrcHover='/bg-verifier-hover.jpg'
           small
