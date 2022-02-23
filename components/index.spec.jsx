@@ -1,4 +1,4 @@
-import { cleanup, render, screen, act, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { theme, ThemeProvider } from '@glif/react-components'
 
 import Home from './Home'

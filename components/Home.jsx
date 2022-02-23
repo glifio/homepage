@@ -13,7 +13,6 @@ import {
   theme
 } from '@glif/react-components'
 import styled from 'styled-components'
-import { useRouter } from 'next/router'
 
 const TextBox = styled.div`
   font-size: ${fontSize('large')};
@@ -143,7 +142,7 @@ export default function AppsHome() {
       >
         <StyledText>
           Glif offers a suite of interoperable tools for the{' '}
-          <a href='https://filecoin.io/' target='_blank'>
+          <a href='https://filecoin.io/' target='_blank' rel='noreferrer'>
             Filecoin
           </a>{' '}
           network. With these tools, people can store, permission, and trade
