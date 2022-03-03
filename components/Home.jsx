@@ -73,17 +73,15 @@ export default function AppsHome() {
           allegiance. (soon)
         </p>
       </OneColumnLargeText>
-      
+
       <Spacer />
 
       <OneColumnLargeText className='primary'>
         <p>
           Glif offers a suite of interoperable tools for the{' '}
-          <SmartLink href='https://filecoin.io/'>
-            Filecoin
-          </SmartLink>{' '}
-          network. With these tools, people can store, permission, and trade
-          their data in healthy and equitable ways.
+          <SmartLink href='https://filecoin.io/'>Filecoin</SmartLink> network.
+          With these tools, people can store, permission, and trade their data
+          in healthy and equitable ways.
         </p>
       </OneColumnLargeText>
     </Page>
