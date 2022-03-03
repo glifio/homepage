@@ -721,6 +721,7 @@ exports[`Apps home page it renders correctly 1`] = `
        
       <a
         href="https://filecoin.io/"
+        rel="noreferrer"
         target="_blank"
       >
         Filecoin
