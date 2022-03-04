@@ -17,8 +17,8 @@
     "publish:mainnet": "wrangler publish --env mainnet"
   },
   "dependencies": {
-    "@glif/base-css": "^0.0.5",
-    "@glif/react-components": "^2.0.0-alpha.46",
+    "@glif/base-css": "^0.0.8",
+    "@glif/react-components": "^2.0.0-alpha.52",
     "axios": "^0.26.0",
     "next": "^12.1.0",
     "node-fetch": ">=3.2.0",
@@ -34,7 +34,7 @@
     "@testing-library/react": "^10.0.1",
     "babel-jest": "^25.1.0",
     "babel-plugin-styled-components": "^2.0.3",
-    "eslint": "^7.32.0",
+    "eslint": "^8.10.0",
     "eslint-config-next": "12.1.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
