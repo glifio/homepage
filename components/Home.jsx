@@ -11,10 +11,20 @@ import {
 export default function AppsHome() {
   return (
     <Page
-      homeUrl='/'
-      blogUrl='https://blog.glif.io'
-      codeUrl='https://github.com/glifio/'
-      nodesUrl='https://lotus.filecoin.io/docs/developers/hosted-lotus/'
+      appHeaderLinks={[
+        {
+          title: 'Blog',
+          url: 'https://glif.io/blog'
+        },
+        {
+          title: 'Code',
+          url: 'https://github.com/glifio'
+        },
+        {
+          title: 'Nodes',
+          url: 'https://lotus.filecoin.io/docs/developers/hosted-lotus'
+        }
+      ]}
     >
       <AppTilesWrapper>
         <AppTile
