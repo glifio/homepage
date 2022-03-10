@@ -30,7 +30,7 @@ module.exports = () => {
       NEXT_PUBLIC_EXPLORER_URL:
         process.env.EXPLORER_URL || 'https://explorer-calibration.glif.link',
       NEXT_PUBLIC_VERIFIER_URL:
-        process.env.VERIFIER_URL || 'https://verify-calibration.glif.link',
+        process.env.VERIFIER_URL || 'https://verify-calibration.glif.link'
     }
   }
 }
