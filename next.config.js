@@ -21,10 +21,16 @@ module.exports = () => {
     trailingSlash: true,
     webpack,
     env: {
-      NEXT_PUBLIC_WALLET_URL: process.env.WALLET_URL || '',
-      NEXT_PUBLIC_SAFE_URL: process.env.SAFE_URL || '',
-      NEXT_PUBLIC_EXPLORER_URL: process.env.EXPLORER_URL || '',
-      NEXT_PUBLIC_VERIFIER_URL: process.env.VERIFIER_URL || ''
+      NEXT_PUBLIC_HOME_URL: process.env.HOME_URL || 'https://glif.io',
+      NEXT_PUBLIC_BLOG_URL: process.env.BLOG_URL || 'https://blog.glif.io/',
+      NEXT_PUBLIC_WALLET_URL:
+        process.env.WALLET_URL || 'https://wallet-calibratio.glif.link',
+      NEXT_PUBLIC_SAFE_URL:
+        process.env.SAFE_URL || 'https://safe-calibration.glif.link',
+      NEXT_PUBLIC_EXPLORER_URL:
+        process.env.EXPLORER_URL || 'https://explorer-calibration.glif.link',
+      NEXT_PUBLIC_VERIFIER_URL:
+        process.env.VERIFIER_URL || 'https://verify-calibration.glif.link',
     }
   }
 }
