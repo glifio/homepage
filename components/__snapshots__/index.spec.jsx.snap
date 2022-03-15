@@ -839,6 +839,18 @@ exports[`Apps home page it renders correctly 1`] = `
         >
           <a
             class="c23"
+            href="https://discord.gg/8Hqm3qvK"
+            rel="noopenner noreferrer"
+            target="_blank"
+          >
+            Discord
+          </a>
+        </li>
+        <li
+          class="c22"
+        >
+          <a
+            class="c23"
             href="https://blog.glif.io"
             rel="noopenner noreferrer"
             target="_blank"
@@ -889,7 +901,7 @@ exports[`Apps home page it renders correctly 1`] = `
         >
           <a
             class="c23"
-            href="#"
+            href="undefined"
           >
             Wallet
           </a>
@@ -899,7 +911,7 @@ exports[`Apps home page it renders correctly 1`] = `
         >
           <a
             class="c23"
-            href="#"
+            href="undefined"
           >
             Safe
           </a>
@@ -909,7 +921,7 @@ exports[`Apps home page it renders correctly 1`] = `
         >
           <a
             class="c23"
-            href="#"
+            href="undefined"
           >
             Explorer
           </a>
@@ -919,7 +931,7 @@ exports[`Apps home page it renders correctly 1`] = `
         >
           <a
             class="c23"
-            href="#"
+            href="undefined"
           >
             Verifier
           </a>
