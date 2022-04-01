@@ -766,7 +766,7 @@ exports[`Apps home page it renders correctly 1`] = `
                 <h2
                   style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
                 >
-                  Node
+                  Nodes
                 </h2>
                 
               </div>
@@ -780,13 +780,13 @@ exports[`Apps home page it renders correctly 1`] = `
               alt=""
               class="c14 hover"
               src="/bg-node-hover.jpg"
-              title="Node"
+              title="Nodes"
             />
           </div>
           <div
             class="c15"
           >
-            A public endpoint of Lotus.
+            Hosted Filecoin Nodes.
           </div>
         </a>
       </div>

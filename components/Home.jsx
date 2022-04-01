@@ -62,8 +62,8 @@ export default function AppsHome() {
           small
         />
         <AppTile
-          title='Node'
-          description='A public endpoint of Lotus.'
+          title='Nodes'
+          description='Hosted Filecoin Nodes.'
           href={process.env.NODE_URL}
           imgSrc='/bg-node.jpg'
           imgSrcHover='/bg-node-hover.jpg'
