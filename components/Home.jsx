@@ -21,8 +21,8 @@ export default function AppsHome() {
           url: 'https://github.com/glifio'
         },
         {
-          title: 'Nodes',
-          url: 'https://lotus.filecoin.io/docs/developers/hosted-lotus'
+          title: 'Discord',
+          url: 'https://discord.gg/B9ju5Eu4Rq'
         }
       ]}
     >
@@ -64,7 +64,7 @@ export default function AppsHome() {
         <AppTile
           title='Nodes'
           description='Hosted Filecoin Nodes.'
-          href={process.env.NODE_URL}
+          href={process.env.NEXT_PUBLIC_NODE_URL}
           imgSrc='/bg-node.jpg'
           imgSrcHover='/bg-node-hover.jpg'
           small

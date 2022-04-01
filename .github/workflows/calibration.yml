@@ -60,6 +60,7 @@ jobs:
           SAFE_URL: 'https://safe-calibration.glif.link'
           EXPLORER_URL: 'https://explorer-calibration.glif.link'
           VERIFIER_URL: 'https://verify-calibration.glif.link'
+          NODE_URL: 'https://api.node.glif.io'
 
       - name: Deploy-cloudflare
         run: |

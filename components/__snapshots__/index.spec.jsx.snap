@@ -571,11 +571,11 @@ exports[`Apps home page it renders correctly 1`] = `
         </a>
         <a
           class="c4 c8"
-          href="https://lotus.filecoin.io/docs/developers/hosted-lotus"
+          href="https://discord.gg/B9ju5Eu4Rq"
           rel="noreferrer noopener"
           target="_blank"
         >
-          Nodes
+          Discord
         </a>
       </nav>
     </header>

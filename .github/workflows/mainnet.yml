@@ -63,6 +63,7 @@ jobs:
           SAFE_URL: 'https://safe.glif.link'
           EXPLORER_URL: 'https://explorer.glif.link'
           VERIFIER_URL: 'https://verify.glif.link'
+          NODE_URL: 'https://api.node.glif.io'
 
       - name: Deploy-cloudflare
         run: |

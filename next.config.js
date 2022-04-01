@@ -31,8 +31,7 @@ module.exports = () => {
         process.env.EXPLORER_URL || 'https://explorer-calibration.glif.link',
       NEXT_PUBLIC_VERIFIER_URL:
         process.env.VERIFIER_URL || 'https://verify-calibration.glif.link',
-      NEXT_PUBLIC_NODE_URL:
-        process.env.NODE_URL || 'https://node-calibration.glif.link'
+      NEXT_PUBLIC_NODE_URL: process.env.NODE_URL || 'https://api.node.glif.io'
     }
   }
 }
