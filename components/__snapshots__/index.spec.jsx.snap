@@ -6,13 +6,13 @@ exports[`Apps home page it renders correctly 1`] = `
   height: 35px;
 }
 
-.c19 {
+.c20 {
   width: auto;
   height: 35px;
   margin-bottom: 2em;
 }
 
-.c10 {
+.c11 {
   position: relative;
   font-size: 28px;
   line-height: 1.3em;
@@ -22,14 +22,14 @@ exports[`Apps home page it renders correctly 1`] = `
   color: inherit;
 }
 
-.c10 .hover {
+.c11 .hover {
   opacity: 0;
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
 
-.c13 {
+.c14 {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
@@ -38,7 +38,7 @@ exports[`Apps home page it renders correctly 1`] = `
   top: 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -57,24 +57,24 @@ exports[`Apps home page it renders correctly 1`] = `
   line-height: 1;
 }
 
-.c11 {
+.c12 {
   color: #fff;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   z-index: 1;
   font-size: 26px;
   line-height: 1.3;
 }
 
-.c14:hover {
+.c15:hover {
   opacity: 1;
 }
 
-.c9 {
+.c10 {
   gap: 10px;
 }
 
@@ -160,12 +160,6 @@ exports[`Apps home page it renders correctly 1`] = `
   background: var(--purple-medium);
 }
 
-.c21 {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
 .c22 {
   list-style-type: none;
   margin: 0;
@@ -173,12 +167,12 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 .c23 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
-.c18 {
+.c19 {
   background: #272727;
   border-radius: 8px;
   padding: 30px;
@@ -191,39 +185,39 @@ exports[`Apps home page it renders correctly 1`] = `
   display: block;
 }
 
-.c15 {
+.c16 {
   position: relative;
   padding: 3rem 1.5rem;
 }
 
-.c15 > *:first-child {
+.c16 > *:first-child {
   margin-top: 0;
 }
 
-.c15 > *:last-child {
+.c16 > *:last-child {
   margin-bottom: 0;
 }
 
-.c17 {
+.c18 {
   font-size: 28px;
 }
 
-.c17 p {
+.c18 p {
   max-width: 670px;
   margin: 2em auto;
 }
 
-.c17.primary {
+.c18.primary {
   color: white;
   background-color: var(--purple-medium);
   border-radius: 8px;
 }
 
-.c17.primary a:hover {
+.c18.primary a:hover {
   color: white;
 }
 
-.c16 {
+.c17 {
   box-sizing: content-box;
 }
 
@@ -249,7 +243,6 @@ exports[`Apps home page it renders correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 2 * 10px);
   gap: 10px;
 }
 
@@ -265,6 +258,10 @@ exports[`Apps home page it renders correctly 1`] = `
   flex: 1 0 auto;
 }
 
+.c9 {
+  min-height: 0;
+}
+
 @media (min-width:480px) {
   .c6 {
     height: 45px;
@@ -278,13 +275,13 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:480px) {
-  .c19 {
+  .c20 {
     height: 45px;
   }
 }
 
 @media (min-width:868px) {
-  .c19 {
+  .c20 {
     height: 55px;
     position: absolute;
     left: 30px;
@@ -293,7 +290,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c10 {
+  .c11 {
     width: 100%;
     overflow: hidden;
     padding-bottom: 144%;
@@ -301,7 +298,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c10 {
+  .c11 {
     width: 45vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -314,7 +311,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c10 {
+  .c11 {
     width: 70vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -327,11 +324,11 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (hover:hover) {
-  .c10:hover .hover {
+  .c11:hover .hover {
     opacity: 1;
   }
 
-  .c10:hover .default {
+  .c11:hover .default {
     opacity: 0;
   }
 }
@@ -341,33 +338,33 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c12 {
+  .c13 {
     padding: 8px;
   }
 }
 
 @media (min-width:480px) {
-  .c12 {
+  .c13 {
     padding: 20px;
   }
 }
 
 @media (max-width:868px) {
-  .c11 {
+  .c12 {
     height: 60vw;
     position: relative;
   }
 }
 
 @media (max-width:480px) {
-  .c11 {
+  .c12 {
     height: 90vw;
     position: relative;
   }
 }
 
 @media (min-width:868px) {
-  .c11 {
+  .c12 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -375,7 +372,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:480px) and (hover:hover) {
-  .c14 {
+  .c15 {
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
@@ -383,7 +380,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c14 {
+  .c15 {
     width: 100%;
     white-space: normal;
     font-size: 13px;
@@ -392,7 +389,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c14 {
+  .c15 {
     position: absolute;
     top: 0;
     left: 0;
@@ -417,7 +414,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c9 {
+  .c10 {
     margin-top: calc(20px * 2);
     margin-bottom: calc(20px * 2);
     display: -webkit-box;
@@ -437,20 +434,20 @@ exports[`Apps home page it renders correctly 1`] = `
     scroll-snap-type: x mandatory;
   }
 
-  .c9::-webkit-scrollbar {
+  .c10::-webkit-scrollbar {
     display: none;
   }
 }
 
 @media (min-width:868px) {
-  .c9 {
+  .c10 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
 }
 
 @media (min-width:868px) {
-  .c20 {
+  .c21 {
     max-width: 670px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -486,14 +483,20 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c15 {
+  .c16 {
     padding: 3rem;
   }
 }
 
 @media (min-width:868px) {
-  .c16 {
+  .c17 {
     height: 2rem;
+  }
+}
+
+@media (min-width:868px) {
+  .c1 {
+    min-height: calc(100vh - 2 * 10px);
   }
 }
 
@@ -577,215 +580,219 @@ exports[`Apps home page it renders correctly 1`] = `
       </nav>
     </header>
     <div
-      class="c9"
+      class="c1 c9"
     >
-      <a
+      <div
         class="c10"
-        data-testid="app-tile-wrapper"
-        rel="noreferrer"
-        target="_blank"
       >
-        <div
-          class="c11"
-        >
-          <header
-            class="c12"
-          >
-            <div>
-              <h2
-                style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
-              >
-                Wallet
-              </h2>
-              
-            </div>
-          </header>
-          <img
-            alt=""
-            class="c13 default"
-            src="/bg-sender.jpg"
-          />
-          <img
-            alt=""
-            class="c13 hover"
-            src="/bg-sender-hover.jpg"
-            title="Wallet"
-          />
-        </div>
-        <div
-          class="c14"
-        >
-          A lightweight interface for sending and receiving Filecoin.
-        </div>
-      </a>
-      <a
-        class="c10"
-        data-testid="app-tile-wrapper"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <div
-          class="c11"
-        >
-          <header
-            class="c12"
-          >
-            <div>
-              <h2
-                style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
-              >
-                Safe
-              </h2>
-              <h3
-                style="font-size: 26px; opacity: 0.3; text-decoration: line-through; line-height: 1; margin: 0px;"
-              >
-                Vault
-              </h3>
-            </div>
-          </header>
-          <img
-            alt=""
-            class="c13 default"
-            src="/bg-safe.jpg"
-          />
-          <img
-            alt=""
-            class="c13 hover"
-            src="/bg-safe-hover.jpg"
-            title="Safe"
-          />
-        </div>
-        <div
-          class="c14"
-        >
-          A Filecoin multisig.
-        </div>
-      </a>
-      <a
-        class="c10"
-        data-testid="app-tile-wrapper"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <div
-          class="c11"
-        >
-          <header
-            class="c12"
-          >
-            <div>
-              <h2
-                style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
-              >
-                Explorer
-              </h2>
-              
-              <h3
-                style="font-size: 26px; opacity: 0.5; line-height: 1; margin: 0px;"
-              >
-                Beta
-              </h3>
-            </div>
-          </header>
-          <img
-            alt=""
-            class="c13 default"
-            src="/bg-explorer.jpg"
-          />
-          <img
-            alt=""
-            class="c13 hover"
-            src="/bg-explorer-hover.jpg"
-            title="Explorer"
-          />
-        </div>
-        <div
-          class="c14"
-        >
-          A Filecoin network explorer.
-        </div>
-      </a>
-      <a
-        class="c10"
-        data-testid="app-tile-wrapper"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <div
-          class="c11"
-        >
-          <header
-            class="c12"
-          >
-            <div>
-              <h2
-                style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
-              >
-                Verify
-              </h2>
-              
-            </div>
-          </header>
-          <img
-            alt=""
-            class="c13 default"
-            src="/bg-verifier.jpg"
-          />
-          <img
-            alt=""
-            class="c13 hover"
-            src="/bg-verifier-hover.jpg"
-            title="Verify"
-          />
-        </div>
-        <div
-          class="c14"
-        >
-          A Filecoin notary service.
-        </div>
-      </a>
-    </div>
-    <div
-      class="c15 c16"
-    />
-    <div
-      class="c15 c17"
-    >
-      <p>
-        Instead of the fortress, there are numerous fortresses now, and various people have keys.
-      </p>
-      <p>
-        The treasures are no longer stored in the secluded cellars and tombs of the few, but guarded by the many. A new language has evolved, used to keep the treasures safe and allow those who watch over them to communicate, directly and discretely. The hieroglyphic system consists only of geometric shapes, as an homage to the interconnected data centers with their cages, racks and cabinets.
-      </p>
-      <p>
-        All miners shall have their own, personalised Glif, as a gesture of allegiance. (soon)
-      </p>
-    </div>
-    <div
-      class="c15 c16"
-    />
-    <div
-      class="c15 c17 primary"
-    >
-      <p>
-        Glif offers a suite of interoperable tools for the
-         
         <a
-          href="https://filecoin.io/"
-          rel="noreferrer noopener"
+          class="c11"
+          data-testid="app-tile-wrapper"
+          rel="noreferrer"
           target="_blank"
         >
-          Filecoin
+          <div
+            class="c12"
+          >
+            <header
+              class="c13"
+            >
+              <div>
+                <h2
+                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                >
+                  Wallet
+                </h2>
+                
+              </div>
+            </header>
+            <img
+              alt=""
+              class="c14 default"
+              src="/bg-sender.jpg"
+            />
+            <img
+              alt=""
+              class="c14 hover"
+              src="/bg-sender-hover.jpg"
+              title="Wallet"
+            />
+          </div>
+          <div
+            class="c15"
+          >
+            A lightweight interface for sending and receiving Filecoin.
+          </div>
         </a>
-         network. With these tools, people can store, permission, and trade their data in healthy and equitable ways.
-      </p>
+        <a
+          class="c11"
+          data-testid="app-tile-wrapper"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c12"
+          >
+            <header
+              class="c13"
+            >
+              <div>
+                <h2
+                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                >
+                  Safe
+                </h2>
+                <h3
+                  style="font-size: 26px; opacity: 0.3; text-decoration: line-through; line-height: 1; margin: 0px;"
+                >
+                  Vault
+                </h3>
+              </div>
+            </header>
+            <img
+              alt=""
+              class="c14 default"
+              src="/bg-safe.jpg"
+            />
+            <img
+              alt=""
+              class="c14 hover"
+              src="/bg-safe-hover.jpg"
+              title="Safe"
+            />
+          </div>
+          <div
+            class="c15"
+          >
+            A Filecoin multisig.
+          </div>
+        </a>
+        <a
+          class="c11"
+          data-testid="app-tile-wrapper"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c12"
+          >
+            <header
+              class="c13"
+            >
+              <div>
+                <h2
+                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                >
+                  Explorer
+                </h2>
+                
+                <h3
+                  style="font-size: 26px; opacity: 0.5; line-height: 1; margin: 0px;"
+                >
+                  Beta
+                </h3>
+              </div>
+            </header>
+            <img
+              alt=""
+              class="c14 default"
+              src="/bg-explorer.jpg"
+            />
+            <img
+              alt=""
+              class="c14 hover"
+              src="/bg-explorer-hover.jpg"
+              title="Explorer"
+            />
+          </div>
+          <div
+            class="c15"
+          >
+            A Filecoin network explorer.
+          </div>
+        </a>
+        <a
+          class="c11"
+          data-testid="app-tile-wrapper"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c12"
+          >
+            <header
+              class="c13"
+            >
+              <div>
+                <h2
+                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                >
+                  Verify
+                </h2>
+                
+              </div>
+            </header>
+            <img
+              alt=""
+              class="c14 default"
+              src="/bg-verifier.jpg"
+            />
+            <img
+              alt=""
+              class="c14 hover"
+              src="/bg-verifier-hover.jpg"
+              title="Verify"
+            />
+          </div>
+          <div
+            class="c15"
+          >
+            A Filecoin notary service.
+          </div>
+        </a>
+      </div>
+      <div
+        class="c16 c17"
+      />
+      <div
+        class="c16 c18"
+      >
+        <p>
+          Instead of the fortress, there are numerous fortresses now, and various people have keys.
+        </p>
+        <p>
+          The treasures are no longer stored in the secluded cellars and tombs of the few, but guarded by the many. A new language has evolved, used to keep the treasures safe and allow those who watch over them to communicate, directly and discretely. The hieroglyphic system consists only of geometric shapes, as an homage to the interconnected data centers with their cages, racks and cabinets.
+        </p>
+        <p>
+          All miners shall have their own, personalised Glif, as a gesture of allegiance. (soon)
+        </p>
+      </div>
+      <div
+        class="c16 c17"
+      />
+      <div
+        class="c16 c18 primary"
+      >
+        <p>
+          Glif offers a suite of interoperable tools for the
+           
+          <a
+            href="https://filecoin.io/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Filecoin
+          </a>
+           network. With these tools, people can store, permission, and trade their data in healthy and equitable ways.
+        </p>
+      </div>
     </div>
   </div>
   <footer
-    class="c18"
+    class="c19"
   >
     <svg
-      class="c19"
+      class="c20"
       height="71px"
       version="1.1"
       viewBox="0 0 52 71"
@@ -829,109 +836,110 @@ exports[`Apps home page it renders correctly 1`] = `
       </g>
     </svg>
     <div
-      class="c20"
+      class="c21"
     >
       <ul
-        class="c21"
+        class="c22"
       >
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="https://discord.gg/B9ju5Eu4Rq"
-            rel="noopenner noreferrer"
+            rel="noreferrer noopener"
             target="_blank"
           >
             Discord
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="https://blog.glif.io"
-            rel="noopenner noreferrer"
+            rel="noreferrer noopener"
             target="_blank"
           >
             Blog
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="https://github.com/glifio"
-            rel="noopenner noreferrer"
+            rel="noreferrer noopener"
             target="_blank"
           >
             Code
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="https://lotus.filecoin.io/docs/developers/hosted-lotus/"
-            rel="noopenner noreferrer"
+            rel="noreferrer noopener"
             target="_blank"
           >
             Nodes
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="mailto:squad@glif.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Contact
           </a>
         </li>
       </ul>
       <ul
-        class="c21"
+        class="c22"
       >
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="undefined"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Wallet
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="undefined"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Safe
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="undefined"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Explorer
           </a>
         </li>
         <li
-          class="c22"
+          class="c23"
         >
           <a
-            class="c23"
             href="undefined"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Verifier
           </a>
