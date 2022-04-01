@@ -750,6 +750,45 @@ exports[`Apps home page it renders correctly 1`] = `
             A Filecoin notary service.
           </div>
         </a>
+        <a
+          class="c11"
+          data-testid="app-tile-wrapper"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c12"
+          >
+            <header
+              class="c13"
+            >
+              <div>
+                <h2
+                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                >
+                  Nodes
+                </h2>
+                
+              </div>
+            </header>
+            <img
+              alt=""
+              class="c14 default"
+              src="/bg-node.jpg"
+            />
+            <img
+              alt=""
+              class="c14 hover"
+              src="/bg-node-hover.jpg"
+              title="Nodes"
+            />
+          </div>
+          <div
+            class="c15"
+          >
+            Hosted Filecoin Nodes.
+          </div>
+        </a>
       </div>
       <div
         class="c16 c17"

@@ -61,6 +61,14 @@ export default function AppsHome() {
           imgSrcHover='/bg-verifier-hover.jpg'
           small
         />
+        <AppTile
+          title='Nodes'
+          description='Hosted Filecoin Nodes.'
+          href={process.env.NODE_URL}
+          imgSrc='/bg-node.jpg'
+          imgSrcHover='/bg-node-hover.jpg'
+          small
+        />
       </AppTilesWrapper>
 
       <Spacer />
