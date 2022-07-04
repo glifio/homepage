@@ -940,7 +940,9 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="/"
+            href="https://wallet.glif.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Wallet
           </a>
@@ -949,7 +951,9 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="/"
+            href="https://safe.glif.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Safe
           </a>
@@ -958,7 +962,9 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="/"
+            href="https://explorer.glif.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Explorer
           </a>
@@ -967,7 +973,9 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="/"
+            href="https://verify.glif.io"
+            rel="noreferrer noopener"
+            target="_blank"
           >
             Verifier
           </a>

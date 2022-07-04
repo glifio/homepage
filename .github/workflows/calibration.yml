@@ -6,11 +6,6 @@ name: deploy - calibration
 env:
   node_version: 14
   git_email: jpschwartz2@uwalumni.com
-  WALLET_URL: 'https://wallet-test.glif.link'
-  SAFE_URL: 'https://safe-calibration.glif.link'
-  EXPLORER_URL: 'https://explorer-calibration.glif.link'
-  VERIFIER_URL: 'https://verify-calibration.glif.link'
-  NODE_URL: 'https://api.node.glif.io'
 
 on:
   push:
@@ -50,7 +45,6 @@ jobs:
         run: |
           npm run lint
           npm test
-
       - name: Tag
         run: npm version prerelease --preid calibration
 
@@ -60,6 +54,12 @@ jobs:
 
       - name: Build
         run: npm run export
+        env:
+          WALLET_URL: 'https://wallet-calibration.glif.link'
+          SAFE_URL: 'https://safe-calibration.glif.link'
+          EXPLORER_URL: 'https://explorer-calibration.glif.link'
+          VERIFIER_URL: 'https://verify-calibration.glif.link'
+          NODE_URL: 'https://api.node.glif.io'
 
       - name: Deploy-cloudflare
         run: |
@@ -84,7 +84,6 @@ jobs:
         run: |
           git push origin v${{ steps.package-version.outputs.current-version}}
           git push origin primary
-
       - name: Release-to-calibration
         uses: softprops/action-gh-release@v1
         with:
