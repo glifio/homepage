@@ -73,6 +73,13 @@ export default function AppsHome() {
 
       <Spacer />
 
+      <OneColumnLargeText className='primary'>
+        <p>
+          Glifs are interoperable apps and tools for{' '}
+          <SmartLink href='https://filecoin.io/'>Filecoin</SmartLink>.
+        </p>
+      </OneColumnLargeText>
+
       <OneColumnLargeText>
         <p>
           Instead of the fortress, there are numerous fortresses now, and
@@ -89,17 +96,6 @@ export default function AppsHome() {
         <p>
           All miners shall have their own, personalised Glif, as a gesture of
           allegiance. (soon)
-        </p>
-      </OneColumnLargeText>
-
-      <Spacer />
-
-      <OneColumnLargeText className='primary'>
-        <p>
-          Glif offers a suite of interoperable tools for the{' '}
-          <SmartLink href='https://filecoin.io/'>Filecoin</SmartLink> network.
-          With these tools, people can store, permission, and trade their data
-          in healthy and equitable ways.
         </p>
       </OneColumnLargeText>
     </Page>

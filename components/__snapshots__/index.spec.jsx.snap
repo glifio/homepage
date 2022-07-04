@@ -160,31 +160,6 @@ exports[`Apps home page it renders correctly 1`] = `
   background: var(--purple-medium);
 }
 
-.c22 {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.c23 {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.c19 {
-  background: #272727;
-  border-radius: 8px;
-  padding: 30px;
-  color: white;
-  position: relative;
-}
-
-.c25 {
-  text-transform: uppercase;
-  display: block;
-}
-
 .c16 {
   position: relative;
   padding: 3rem 1.5rem;
@@ -219,6 +194,31 @@ exports[`Apps home page it renders correctly 1`] = `
 
 .c17 {
   box-sizing: content-box;
+}
+
+.c22 {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.c23 {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.c19 {
+  background: #272727;
+  border-radius: 8px;
+  padding: 30px;
+  color: white;
+  position: relative;
+}
+
+.c25 {
+  text-transform: uppercase;
+  display: block;
 }
 
 .c0 {
@@ -447,6 +447,18 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
+  .c16 {
+    padding: 3rem;
+  }
+}
+
+@media (min-width:868px) {
+  .c17 {
+    height: 2rem;
+  }
+}
+
+@media (min-width:868px) {
   .c21 {
     max-width: 670px;
     display: grid;
@@ -480,18 +492,6 @@ exports[`Apps home page it renders correctly 1`] = `
 
 @media (min-width:868px) {
 
-}
-
-@media (min-width:868px) {
-  .c16 {
-    padding: 3rem;
-  }
-}
-
-@media (min-width:868px) {
-  .c17 {
-    height: 2rem;
-  }
 }
 
 @media (min-width:868px) {
@@ -794,6 +794,22 @@ exports[`Apps home page it renders correctly 1`] = `
         class="c16 c17"
       />
       <div
+        class="c16 c18 primary"
+      >
+        <p>
+          Glifs are interoperable apps and tools for
+           
+          <a
+            href="https://filecoin.io/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Filecoin
+          </a>
+          .
+        </p>
+      </div>
+      <div
         class="c16 c18"
       >
         <p>
@@ -804,25 +820,6 @@ exports[`Apps home page it renders correctly 1`] = `
         </p>
         <p>
           All miners shall have their own, personalised Glif, as a gesture of allegiance. (soon)
-        </p>
-      </div>
-      <div
-        class="c16 c17"
-      />
-      <div
-        class="c16 c18 primary"
-      >
-        <p>
-          Glif offers a suite of interoperable tools for the
-           
-          <a
-            href="https://filecoin.io/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            Filecoin
-          </a>
-           network. With these tools, people can store, permission, and trade their data in healthy and equitable ways.
         </p>
       </div>
     </div>
@@ -930,7 +927,7 @@ exports[`Apps home page it renders correctly 1`] = `
           <a
             href="mailto:squad@glif.io"
             rel="noreferrer noopener"
-            target="_blank"
+            target="_self"
           >
             Contact
           </a>
@@ -943,9 +940,7 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="undefined"
-            rel="noreferrer noopener"
-            target="_blank"
+            href="/"
           >
             Wallet
           </a>
@@ -954,9 +949,7 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="undefined"
-            rel="noreferrer noopener"
-            target="_blank"
+            href="/"
           >
             Safe
           </a>
@@ -965,9 +958,7 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="undefined"
-            rel="noreferrer noopener"
-            target="_blank"
+            href="/"
           >
             Explorer
           </a>
@@ -976,9 +967,7 @@ exports[`Apps home page it renders correctly 1`] = `
           class="c23"
         >
           <a
-            href="undefined"
-            rel="noreferrer noopener"
-            target="_blank"
+            href="/"
           >
             Verifier
           </a>

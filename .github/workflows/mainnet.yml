@@ -59,10 +59,10 @@ jobs:
       - name: Build
         run: npm run export
         env:
-          WALLET_URL: 'https://wallet.glif.link'
-          SAFE_URL: 'https://safe.glif.link'
-          EXPLORER_URL: 'https://explorer.glif.link'
-          VERIFIER_URL: 'https://verify.glif.link'
+          WALLET_URL: 'https://wallet.glif.io'
+          SAFE_URL: 'https://safe.glif.io'
+          EXPLORER_URL: 'https://explorer.glif.io'
+          VERIFIER_URL: 'https://verify.glif.io'
           NODE_URL: 'https://api.node.glif.io'
 
       - name: Deploy-cloudflare
