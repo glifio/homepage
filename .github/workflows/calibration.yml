@@ -54,7 +54,9 @@ jobs:
         uses: martinbeentjes/npm-get-version-action@master
 
       - name: Build
-        run: npm run export
+        run: |
+          npm run build
+          npm run export
         env:
           WALLET_URL: 'https://wallet-test.glif.link'
           SAFE_URL: 'https://safe-calibration.glif.link'
