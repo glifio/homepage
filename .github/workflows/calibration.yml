@@ -59,7 +59,7 @@ jobs:
         uses: martinbeentjes/npm-get-version-action@master
 
       - name: Build
-        run: npm run build
+        run: npm run export
 
       - name: Deploy-cloudflare
         run: |
