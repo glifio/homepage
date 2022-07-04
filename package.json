@@ -1,12 +1,12 @@
 {
   "name": "glif-homepage",
-  "version": "2.0.3",
+  "version": "2.0.2-calibration.6",
   "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p ${PORT-5000}",
-    "export": "next export",
+    "export": "next build && next export",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "npm run lint -- --fix",
     "serve": "npx serve ./out",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@glif/base-css": "^0.0.11",
-    "@glif/react-components": "^2.0.0-alpha.126",
+    "@glif/react-components": "^2.0.0-alpha.127",
     "axios": "^0.26.0",
     "next": "^12.1.0",
     "node-fetch": ">=3.2.0",

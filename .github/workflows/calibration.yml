@@ -6,6 +6,11 @@ name: deploy - calibration
 env:
   node_version: 14
   git_email: jpschwartz2@uwalumni.com
+  WALLET_URL: 'https://wallet-test.glif.link'
+  SAFE_URL: 'https://safe-calibration.glif.link'
+  EXPLORER_URL: 'https://explorer-calibration.glif.link'
+  VERIFIER_URL: 'https://verify-calibration.glif.link'
+  NODE_URL: 'https://api.node.glif.io'
 
 on:
   push:
@@ -54,15 +59,7 @@ jobs:
         uses: martinbeentjes/npm-get-version-action@master
 
       - name: Build
-        run: |
-          npm run build
-          npm run export
-        env:
-          WALLET_URL: 'https://wallet-test.glif.link'
-          SAFE_URL: 'https://safe-calibration.glif.link'
-          EXPLORER_URL: 'https://explorer-calibration.glif.link'
-          VERIFIER_URL: 'https://verify-calibration.glif.link'
-          NODE_URL: 'https://api.node.glif.io'
+        run: npm run build
 
       - name: Deploy-cloudflare
         run: |
