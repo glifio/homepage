@@ -1,6 +1,6 @@
 {
   "name": "glif-homepage",
-  "version": "2.0.7",
+  "version": "2.0.8-calibration.0",
   "private": false,
   "scripts": {
     "dev": "next dev",
