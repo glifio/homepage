@@ -14,7 +14,7 @@ export default function AppsHome() {
       appHeaderLinks={[
         {
           title: 'Blog',
-          url: 'https://glif.io/blog'
+          url: 'https://blog.glif.io'
         },
         {
           title: 'Code',
