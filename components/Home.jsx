@@ -2,10 +2,10 @@ import React from 'react'
 import {
   AppTile,
   AppTilesWrapper,
-  OneColumnLargeText,
+  PrimaryBox,
   Page,
   Spacer,
-  SmartLink
+  OneColumnLargeText
 } from '@glif/react-components'
 
 export default function AppsHome() {
@@ -26,6 +26,12 @@ export default function AppsHome() {
         }
       ]}
     >
+      <PrimaryBox>
+        <h2>
+          Glifs are interoperable apps and tools for{' '}
+          <a href='https://filecoin.io/'>Filecoin</a>.
+        </h2>
+      </PrimaryBox>
       <AppTilesWrapper>
         <AppTile
           title='Wallet'
@@ -73,13 +79,6 @@ export default function AppsHome() {
 
       <Spacer />
 
-      <OneColumnLargeText className='primary'>
-        <p>
-          Glifs are interoperable apps and tools for{' '}
-          <SmartLink href='https://filecoin.io/'>Filecoin</SmartLink>.
-        </p>
-      </OneColumnLargeText>
-
       <OneColumnLargeText>
         <p>
           Instead of the fortress, there are numerous fortresses now, and
@@ -92,10 +91,6 @@ export default function AppsHome() {
           communicate, directly and discretely. The hieroglyphic system consists
           only of geometric shapes, as an homage to the interconnected data
           centers with their cages, racks and cabinets.
-        </p>
-        <p>
-          All miners shall have their own, personalised Glif, as a gesture of
-          allegiance. (soon)
         </p>
       </OneColumnLargeText>
     </Page>

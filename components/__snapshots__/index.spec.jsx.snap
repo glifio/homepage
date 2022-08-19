@@ -6,76 +6,91 @@ exports[`Apps home page it renders correctly 1`] = `
   height: 35px;
 }
 
-.c19 {
+.c21 {
   width: auto;
   height: 35px;
   margin-bottom: 2em;
 }
 
-.c10 {
-  position: relative;
-  font-size: 28px;
-  line-height: 1.3em;
-  display: block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c10 .hover {
-  opacity: 0;
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-}
-
-.c13 {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  position: relative;
-  z-index: 2;
-  font-size: 26px;
-  line-height: 1;
-}
-
-.c11 {
-  color: #fff;
-  background: #000;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.c14 {
-  z-index: 1;
-  font-size: 26px;
-  line-height: 1.3;
-}
-
-.c14:hover {
-  opacity: 1;
-}
-
 .c9 {
-  gap: var(--space-m);
+  padding: 1.5em;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c9 > *:first-child {
+  margin-top: 0;
+}
+
+.c9 > *:last-child {
+  margin-bottom: 0;
+}
+
+.c9 > svg:first-child {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+.c9 > h2:first-child {
+  margin: 0;
+}
+
+.c9 header:first-child {
+  margin: -1.5em -1.5em 1.5em -1.5em;
+  padding: 1.5em;
+  background-color: var(--purple-medium);
+  color: var(--white);
+}
+
+.c10 {
+  background-color: var(--purple-medium);
+  color: var(--white);
+}
+
+.c10 hr {
+  border-color: var(--white);
+}
+
+.c17 {
+  position: relative;
+  padding: 3rem 1.5rem;
+}
+
+.c17:not(:last-child) {
+  padding-bottom: 0;
+}
+
+.c17 > *:first-child {
+  margin-top: 0;
+}
+
+.c17 > *:last-child {
+  margin-bottom: 0;
+}
+
+.c19 {
+  font-size: 28px;
+}
+
+.c19 p {
+  max-width: 670px;
+  margin: 2em auto;
+}
+
+.c19.primary {
+  color: white;
+  background-color: var(--purple-medium);
+  border-radius: 8px;
+}
+
+.c19.primary a:hover {
+  color: white;
+}
+
+.c18 {
+  box-sizing: content-box;
 }
 
 .c2 {
@@ -156,59 +171,19 @@ exports[`Apps home page it renders correctly 1`] = `
   background: var(--purple-medium);
 }
 
-.c15 {
-  position: relative;
-  padding: 3rem 1.5rem;
-}
-
-.c15:not(:last-child) {
-  padding-bottom: 0;
-}
-
-.c15 > *:first-child {
-  margin-top: 0;
-}
-
-.c15 > *:last-child {
-  margin-bottom: 0;
-}
-
-.c17 {
-  font-size: 28px;
-}
-
-.c17 p {
-  max-width: 670px;
-  margin: 2em auto;
-}
-
-.c17.primary {
-  color: white;
-  background-color: var(--purple-medium);
-  border-radius: 8px;
-}
-
-.c17.primary a:hover {
-  color: white;
-}
-
-.c16 {
-  box-sizing: content-box;
-}
-
-.c21 {
+.c23 {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
-.c22 {
+.c24 {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
-.c18 {
+.c20 {
   background: #272727;
   border-radius: 8px;
   padding: 30px;
@@ -216,7 +191,7 @@ exports[`Apps home page it renders correctly 1`] = `
   position: relative;
 }
 
-.c24 {
+.c26 {
   text-transform: uppercase;
   display: block;
 }
@@ -262,6 +237,72 @@ exports[`Apps home page it renders correctly 1`] = `
   min-height: 0;
 }
 
+.c12 {
+  position: relative;
+  font-size: 28px;
+  line-height: 1.3em;
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c12 .hover {
+  opacity: 0;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.c15 {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.c13 {
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.c16 {
+  z-index: 1;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.c16:hover {
+  opacity: 1;
+}
+
+.c11 {
+  gap: var(--space-m);
+}
+
 @media (min-width:480px) {
   .c5 {
     height: 45px;
@@ -275,13 +316,13 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:480px) {
-  .c19 {
+  .c21 {
     height: 45px;
   }
 }
 
 @media (min-width:868px) {
-  .c19 {
+  .c21 {
     height: 55px;
     position: absolute;
     left: 30px;
@@ -290,7 +331,61 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c10 {
+  .c17 {
+    padding: 3rem;
+  }
+}
+
+@media (min-width:868px) {
+  .c18 {
+    height: 2rem;
+  }
+}
+
+@media (min-width:868px) {
+  .c22 {
+    max-width: 670px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-m);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:868px) {
+  .c25 {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width:868px) {
+  .c26 {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width:868px) {
+  .c26 {
+    margin-top: 5em;
+  }
+}
+
+@media (max-width:868px) {
+
+}
+
+@media (min-width:868px) {
+
+}
+
+@media (min-width:868px) {
+  .c1 {
+    min-height: calc(100vh - 2 * var(--space-m));
+  }
+}
+
+@media (min-width:868px) {
+  .c12 {
     width: 100%;
     overflow: hidden;
     padding-bottom: 144%;
@@ -298,7 +393,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c10 {
+  .c12 {
     width: 45vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -311,7 +406,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c10 {
+  .c12 {
     width: 70vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -324,11 +419,11 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (hover:hover) {
-  .c10:hover .hover {
+  .c12:hover .hover {
     opacity: 1;
   }
 
-  .c10:hover .default {
+  .c12:hover .default {
     opacity: 0;
   }
 }
@@ -338,33 +433,33 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c12 {
+  .c14 {
     padding: var(--space-m);
   }
 }
 
 @media (min-width:480px) {
-  .c12 {
+  .c14 {
     padding: var(--space-l);
   }
 }
 
 @media (max-width:868px) {
-  .c11 {
+  .c13 {
     height: 60vw;
     position: relative;
   }
 }
 
 @media (max-width:480px) {
-  .c11 {
+  .c13 {
     height: 90vw;
     position: relative;
   }
 }
 
 @media (min-width:868px) {
-  .c11 {
+  .c13 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -372,7 +467,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:480px) and (hover:hover) {
-  .c14 {
+  .c16 {
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
@@ -380,7 +475,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c14 {
+  .c16 {
     width: 100%;
     white-space: normal;
     font-size: 13px;
@@ -389,7 +484,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c14 {
+  .c16 {
     position: absolute;
     top: 0;
     left: 0;
@@ -414,7 +509,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c9 {
+  .c11 {
     margin-top: var(--space-xl);
     margin-bottom: var(--space-xl);
     display: -webkit-box;
@@ -434,69 +529,15 @@ exports[`Apps home page it renders correctly 1`] = `
     scroll-snap-type: x mandatory;
   }
 
-  .c9::-webkit-scrollbar {
+  .c11::-webkit-scrollbar {
     display: none;
   }
 }
 
 @media (min-width:868px) {
-  .c9 {
+  .c11 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-  }
-}
-
-@media (min-width:868px) {
-  .c15 {
-    padding: 3rem;
-  }
-}
-
-@media (min-width:868px) {
-  .c16 {
-    height: 2rem;
-  }
-}
-
-@media (min-width:868px) {
-  .c20 {
-    max-width: 670px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: var(--space-m);
-    margin: 0 auto;
-  }
-}
-
-@media (max-width:868px) {
-  .c23 {
-    margin-top: 2em;
-  }
-}
-
-@media (min-width:868px) {
-  .c24 {
-    margin-top: 1em;
-  }
-}
-
-@media (max-width:868px) {
-  .c24 {
-    margin-top: 5em;
-  }
-}
-
-@media (max-width:868px) {
-
-}
-
-@media (min-width:868px) {
-
-}
-
-@media (min-width:868px) {
-  .c1 {
-    min-height: calc(100vh - 2 * var(--space-m));
   }
 }
 
@@ -579,20 +620,34 @@ exports[`Apps home page it renders correctly 1`] = `
       class="c1 c8"
     >
       <div
-        class="c9"
+        class="c9 c10"
+      >
+        <h2>
+          Glifs are interoperable apps and tools for
+           
+          <a
+            href="https://filecoin.io/"
+          >
+            Filecoin
+          </a>
+          .
+        </h2>
+      </div>
+      <div
+        class="c11"
       >
         <a
-          class="c10"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://wallet-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c11"
+            class="c13"
           >
             <header
-              class="c12"
+              class="c14"
             >
               <div>
                 <h2
@@ -605,34 +660,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c13 default"
+              class="c15 default"
               src="/bg-sender.jpg"
             />
             <img
               alt=""
-              class="c13 hover"
+              class="c15 hover"
               src="/bg-sender-hover.jpg"
               title="Wallet"
             />
           </div>
           <div
-            class="c14"
+            class="c16"
           >
             A lightweight interface for sending and receiving Filecoin.
           </div>
         </a>
         <a
-          class="c10"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://safe-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c11"
+            class="c13"
           >
             <header
-              class="c12"
+              class="c14"
             >
               <div>
                 <h2
@@ -649,34 +704,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c13 default"
+              class="c15 default"
               src="/bg-safe.jpg"
             />
             <img
               alt=""
-              class="c13 hover"
+              class="c15 hover"
               src="/bg-safe-hover.jpg"
               title="Safe"
             />
           </div>
           <div
-            class="c14"
+            class="c16"
           >
             A Filecoin multisig.
           </div>
         </a>
         <a
-          class="c10"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://explorer-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c11"
+            class="c13"
           >
             <header
-              class="c12"
+              class="c14"
             >
               <div>
                 <h2
@@ -694,34 +749,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c13 default"
+              class="c15 default"
               src="/bg-explorer.jpg"
             />
             <img
               alt=""
-              class="c13 hover"
+              class="c15 hover"
               src="/bg-explorer-hover.jpg"
               title="Explorer"
             />
           </div>
           <div
-            class="c14"
+            class="c16"
           >
             A Filecoin network explorer.
           </div>
         </a>
         <a
-          class="c10"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://verify-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c11"
+            class="c13"
           >
             <header
-              class="c12"
+              class="c14"
             >
               <div>
                 <h2
@@ -734,33 +789,33 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c13 default"
+              class="c15 default"
               src="/bg-verifier.jpg"
             />
             <img
               alt=""
-              class="c13 hover"
+              class="c15 hover"
               src="/bg-verifier-hover.jpg"
               title="Verify"
             />
           </div>
           <div
-            class="c14"
+            class="c16"
           >
             A Filecoin notary service.
           </div>
         </a>
         <a
-          class="c10"
+          class="c12"
           data-testid="app-tile-wrapper"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c11"
+            class="c13"
           >
             <header
-              class="c12"
+              class="c14"
             >
               <div>
                 <h2
@@ -773,44 +828,28 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c13 default"
+              class="c15 default"
               src="/bg-node.jpg"
             />
             <img
               alt=""
-              class="c13 hover"
+              class="c15 hover"
               src="/bg-node-hover.jpg"
               title="Nodes"
             />
           </div>
           <div
-            class="c14"
+            class="c16"
           >
             Hosted Filecoin Nodes.
           </div>
         </a>
       </div>
       <div
-        class="c15 c16"
+        class="c17 c18"
       />
       <div
-        class="c15 c17 primary"
-      >
-        <p>
-          Glifs are interoperable apps and tools for
-           
-          <a
-            href="https://filecoin.io/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            Filecoin
-          </a>
-          .
-        </p>
-      </div>
-      <div
-        class="c15 c17"
+        class="c17 c19"
       >
         <p>
           Instead of the fortress, there are numerous fortresses now, and various people have keys.
@@ -818,17 +857,14 @@ exports[`Apps home page it renders correctly 1`] = `
         <p>
           The treasures are no longer stored in the secluded cellars and tombs of the few, but guarded by the many. A new language has evolved, used to keep the treasures safe and allow those who watch over them to communicate, directly and discretely. The hieroglyphic system consists only of geometric shapes, as an homage to the interconnected data centers with their cages, racks and cabinets.
         </p>
-        <p>
-          All miners shall have their own, personalised Glif, as a gesture of allegiance. (soon)
-        </p>
       </div>
     </div>
   </div>
   <footer
-    class="c18"
+    class="c20"
   >
     <svg
-      class="c19"
+      class="c21"
       height="71px"
       version="1.1"
       viewBox="0 0 52 71"
@@ -872,13 +908,13 @@ exports[`Apps home page it renders correctly 1`] = `
       </g>
     </svg>
     <div
-      class="c20"
+      class="c22"
     >
       <ul
-        class="c21"
+        class="c23"
       >
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://discord.gg/B9ju5Eu4Rq"
@@ -889,7 +925,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://blog.glif.io"
@@ -900,7 +936,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://github.com/glifio"
@@ -911,7 +947,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://lotus.filecoin.io/docs/developers/hosted-lotus/"
@@ -922,7 +958,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="mailto:squad@infinitescroll.org"
@@ -934,10 +970,10 @@ exports[`Apps home page it renders correctly 1`] = `
         </li>
       </ul>
       <ul
-        class="c21"
+        class="c23"
       >
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://wallet.glif.io"
@@ -948,7 +984,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://safe.glif.io"
@@ -959,7 +995,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://explorer.glif.io"
@@ -970,7 +1006,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c22"
+          class="c24"
         >
           <a
             href="https://verify.glif.io"
@@ -982,14 +1018,14 @@ exports[`Apps home page it renders correctly 1`] = `
         </li>
       </ul>
       <div
-        class="c23"
+        class="c25"
       >
         GLIF
         <br />
         Freeport, Grand Bahamas
       </div>
       <div
-        class="c24"
+        class="c26"
       >
         2022 Glif for life
       </div>
