@@ -7,6 +7,17 @@ import {
   Spacer,
   OneColumnLargeText
 } from '@glif/react-components'
+import styled from 'styled-components'
+
+const FilecoinLink = styled.a.attrs(() => ({
+  href: 'https://filecoin.io/',
+  target: '_blank',
+  rel: 'noopenner noreferrer'
+}))`
+  &:hover {
+    color: var(--white);
+  }
+`
 
 export default function AppsHome() {
   return (
@@ -29,7 +40,7 @@ export default function AppsHome() {
       <PrimaryBox>
         <h2>
           Glifs are interoperable apps and tools for{' '}
-          <a href='https://filecoin.io/'>Filecoin</a>.
+          <FilecoinLink>Filecoin</FilecoinLink>.
         </h2>
       </PrimaryBox>
       <AppTilesWrapper>
