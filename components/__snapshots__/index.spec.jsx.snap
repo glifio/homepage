@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Apps home page it renders correctly 1`] = `
-.c5 {
+.c4 {
   width: auto;
   height: 35px;
 }
 
-.c22 {
+.c21 {
   width: auto;
   height: 35px;
   margin-bottom: 2em;
 }
 
-.c9 {
+.c8 {
   padding: 1.5em;
   border-radius: 8px;
   overflow: hidden;
@@ -20,76 +20,76 @@ exports[`Apps home page it renders correctly 1`] = `
   word-break: break-word;
 }
 
-.c9 > *:first-child {
+.c8 > *:first-child {
   margin-top: 0;
 }
 
-.c9 > *:last-child {
+.c8 > *:last-child {
   margin-bottom: 0;
 }
 
-.c9 > svg:first-child {
+.c8 > svg:first-child {
   display: block;
   margin: 0 auto 1em;
 }
 
-.c9 > h2:first-child {
+.c8 > h2:first-child {
   margin: 0;
 }
 
-.c9 header:first-child {
+.c8 header:first-child {
   margin: -1.5em -1.5em 1.5em -1.5em;
   padding: 1.5em;
   background-color: var(--purple-medium);
   color: var(--white);
 }
 
-.c10 {
+.c9 {
   background-color: var(--purple-medium);
   color: var(--white);
 }
 
-.c10 hr {
+.c9 hr {
   border-color: var(--white);
 }
 
-.c18 {
+.c17 {
   position: relative;
   padding: 3rem 1.5rem;
 }
 
-.c18:not(:last-child) {
+.c17:not(:last-child) {
   padding-bottom: 0;
 }
 
-.c18 > *:first-child {
+.c17 > *:first-child {
   margin-top: 0;
 }
 
-.c18 > *:last-child {
+.c17 > *:last-child {
   margin-bottom: 0;
 }
 
-.c20 {
+.c19 {
   font-size: 28px;
 }
 
-.c20 p {
+.c19 p {
   max-width: 670px;
   margin: 2em auto;
 }
 
-.c20.primary {
+.c19.primary {
   color: white;
   background-color: var(--purple-medium);
   border-radius: 8px;
 }
 
-.c20.primary a:hover {
+.c19.primary a:hover {
   color: white;
 }
 
-.c19 {
+.c18 {
   box-sizing: content-box;
 }
 
@@ -136,39 +136,44 @@ exports[`Apps home page it renders correctly 1`] = `
   flex-grow: 1;
 }
 
-.c6 {
-  gap: var(--space-m);
+.c5 {
+  gap: 0;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
-.c4 {
-  color: black;
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding: 0 var(--space-m);
+  -webkit-transition: color 0.1s ease-out;
+  transition: color 0.1s ease-out;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.c4:hover {
-  color: black;
-}
-
-.c7 {
-  padding: 0.5em 0.75em;
-  border: 1px solid black;
-  border-radius: 2em;
-}
-
-.c7:hover,
-.c7.active {
+.c6:hover,
+.c6.active {
   color: var(--purple-medium);
-  border-color: var(--purple-medium);
 }
 
-.c7:active {
-  color: white;
-  background: var(--purple-medium);
+.c23 {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .c24 {
@@ -177,13 +182,7 @@ exports[`Apps home page it renders correctly 1`] = `
   padding-left: 0;
 }
 
-.c25 {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.c21 {
+.c20 {
   background: #272727;
   border-radius: 8px;
   padding: 30px;
@@ -191,7 +190,7 @@ exports[`Apps home page it renders correctly 1`] = `
   position: relative;
 }
 
-.c27 {
+.c26 {
   text-transform: uppercase;
   display: block;
 }
@@ -233,11 +232,11 @@ exports[`Apps home page it renders correctly 1`] = `
   flex: 1 0 auto;
 }
 
-.c8 {
+.c7 {
   min-height: 0;
 }
 
-.c13 {
+.c12 {
   position: relative;
   font-size: 28px;
   line-height: 1.3em;
@@ -247,14 +246,14 @@ exports[`Apps home page it renders correctly 1`] = `
   color: inherit;
 }
 
-.c13 .hover {
+.c12 .hover {
   opacity: 0;
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
 }
 
-.c16 {
+.c15 {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
@@ -263,7 +262,7 @@ exports[`Apps home page it renders correctly 1`] = `
   top: 0;
 }
 
-.c15 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -282,51 +281,51 @@ exports[`Apps home page it renders correctly 1`] = `
   line-height: 1;
 }
 
-.c14 {
+.c13 {
   color: #fff;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.c17 {
+.c16 {
   z-index: 1;
   font-size: 26px;
   line-height: 1.3;
 }
 
-.c17:hover {
+.c16:hover {
   opacity: 1;
 }
 
-.c12 {
+.c11 {
   gap: var(--space-m);
 }
 
-.c11:hover {
+.c10:hover {
   color: var(--white);
 }
 
 @media (min-width:480px) {
-  .c5 {
+  .c4 {
     height: 45px;
   }
 }
 
 @media (min-width:868px) {
-  .c5 {
+  .c4 {
     height: 55px;
   }
 }
 
 @media (min-width:480px) {
-  .c22 {
+  .c21 {
     height: 45px;
   }
 }
 
 @media (min-width:868px) {
-  .c22 {
+  .c21 {
     height: 55px;
     position: absolute;
     left: 30px;
@@ -335,19 +334,19 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c18 {
+  .c17 {
     padding: 3rem;
   }
 }
 
 @media (min-width:868px) {
-  .c19 {
+  .c18 {
     height: 2rem;
   }
 }
 
 @media (min-width:868px) {
-  .c23 {
+  .c22 {
     max-width: 670px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -357,19 +356,19 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c26 {
+  .c25 {
     margin-top: 2em;
   }
 }
 
 @media (min-width:868px) {
-  .c27 {
+  .c26 {
     margin-top: 1em;
   }
 }
 
 @media (max-width:868px) {
-  .c27 {
+  .c26 {
     margin-top: 5em;
   }
 }
@@ -389,7 +388,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c13 {
+  .c12 {
     width: 100%;
     overflow: hidden;
     padding-bottom: 144%;
@@ -397,7 +396,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c13 {
+  .c12 {
     width: 45vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -410,7 +409,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c13 {
+  .c12 {
     width: 70vw;
     -webkit-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
@@ -423,11 +422,11 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (hover:hover) {
-  .c13:hover .hover {
+  .c12:hover .hover {
     opacity: 1;
   }
 
-  .c13:hover .default {
+  .c12:hover .default {
     opacity: 0;
   }
 }
@@ -437,33 +436,33 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:480px) {
-  .c15 {
+  .c14 {
     padding: var(--space-m);
   }
 }
 
 @media (min-width:480px) {
-  .c15 {
+  .c14 {
     padding: var(--space-l);
   }
 }
 
 @media (max-width:868px) {
-  .c14 {
+  .c13 {
     height: 60vw;
     position: relative;
   }
 }
 
 @media (max-width:480px) {
-  .c14 {
+  .c13 {
     height: 90vw;
     position: relative;
   }
 }
 
 @media (min-width:868px) {
-  .c14 {
+  .c13 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -471,7 +470,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:480px) and (hover:hover) {
-  .c17 {
+  .c16 {
     opacity: 0;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
@@ -479,7 +478,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c17 {
+  .c16 {
     width: 100%;
     white-space: normal;
     font-size: 13px;
@@ -488,7 +487,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (min-width:868px) {
-  .c17 {
+  .c16 {
     position: absolute;
     top: 0;
     left: 0;
@@ -513,7 +512,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 @media (max-width:868px) {
-  .c12 {
+  .c11 {
     margin-top: var(--space-xl);
     margin-bottom: var(--space-xl);
     display: -webkit-box;
@@ -533,13 +532,13 @@ exports[`Apps home page it renders correctly 1`] = `
     scroll-snap-type: x mandatory;
   }
 
-  .c12::-webkit-scrollbar {
+  .c11::-webkit-scrollbar {
     display: none;
   }
 }
 
 @media (min-width:868px) {
-  .c12 {
+  .c11 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
@@ -558,11 +557,10 @@ exports[`Apps home page it renders correctly 1`] = `
         class="c3"
       >
         <a
-          class="c4"
           href="/"
         >
           <svg
-            class="c5"
+            class="c4"
             fill="none"
             height="71"
             viewBox="0 0 52 71"
@@ -592,10 +590,10 @@ exports[`Apps home page it renders correctly 1`] = `
         </a>
       </nav>
       <nav
-        class="c3 c6"
+        class="c3 c5"
       >
         <a
-          class="c4 c7"
+          class="c6"
           href="https://blog.glif.io"
           rel="noreferrer noopener"
           target="_blank"
@@ -603,7 +601,7 @@ exports[`Apps home page it renders correctly 1`] = `
           Blog
         </a>
         <a
-          class="c4 c7"
+          class="c6"
           href="https://github.com/glifio"
           rel="noreferrer noopener"
           target="_blank"
@@ -611,7 +609,7 @@ exports[`Apps home page it renders correctly 1`] = `
           Code
         </a>
         <a
-          class="c4 c7"
+          class="c6"
           href="https://discord.gg/B9ju5Eu4Rq"
           rel="noreferrer noopener"
           target="_blank"
@@ -621,16 +619,16 @@ exports[`Apps home page it renders correctly 1`] = `
       </nav>
     </header>
     <div
-      class="c1 c8"
+      class="c1 c7"
     >
       <div
-        class="c9 c10"
+        class="c8 c9"
       >
         <h2>
           Glifs are interoperable apps and tools for
            
           <a
-            class="c11"
+            class="c10"
             href="https://filecoin.io/"
             rel="noopenner noreferrer"
             target="_blank"
@@ -641,20 +639,20 @@ exports[`Apps home page it renders correctly 1`] = `
         </h2>
       </div>
       <div
-        class="c12"
+        class="c11"
       >
         <a
-          class="c13"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://wallet-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c14"
+            class="c13"
           >
             <header
-              class="c15"
+              class="c14"
             >
               <div>
                 <h2
@@ -667,34 +665,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c16 default"
+              class="c15 default"
               src="/bg-sender.jpg"
             />
             <img
               alt=""
-              class="c16 hover"
+              class="c15 hover"
               src="/bg-sender-hover.jpg"
               title="Wallet"
             />
           </div>
           <div
-            class="c17"
+            class="c16"
           >
             A lightweight interface for sending and receiving Filecoin.
           </div>
         </a>
         <a
-          class="c13"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://safe-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c14"
+            class="c13"
           >
             <header
-              class="c15"
+              class="c14"
             >
               <div>
                 <h2
@@ -711,34 +709,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c16 default"
+              class="c15 default"
               src="/bg-safe.jpg"
             />
             <img
               alt=""
-              class="c16 hover"
+              class="c15 hover"
               src="/bg-safe-hover.jpg"
               title="Safe"
             />
           </div>
           <div
-            class="c17"
+            class="c16"
           >
             A Filecoin multisig.
           </div>
         </a>
         <a
-          class="c13"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://explorer-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c14"
+            class="c13"
           >
             <header
-              class="c15"
+              class="c14"
             >
               <div>
                 <h2
@@ -756,34 +754,34 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c16 default"
+              class="c15 default"
               src="/bg-explorer.jpg"
             />
             <img
               alt=""
-              class="c16 hover"
+              class="c15 hover"
               src="/bg-explorer-hover.jpg"
               title="Explorer"
             />
           </div>
           <div
-            class="c17"
+            class="c16"
           >
             A Filecoin network explorer.
           </div>
         </a>
         <a
-          class="c13"
+          class="c12"
           data-testid="app-tile-wrapper"
           href="https://verify-calibration.glif.link"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c14"
+            class="c13"
           >
             <header
-              class="c15"
+              class="c14"
             >
               <div>
                 <h2
@@ -796,33 +794,33 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c16 default"
+              class="c15 default"
               src="/bg-verifier.jpg"
             />
             <img
               alt=""
-              class="c16 hover"
+              class="c15 hover"
               src="/bg-verifier-hover.jpg"
               title="Verify"
             />
           </div>
           <div
-            class="c17"
+            class="c16"
           >
             A Filecoin notary service.
           </div>
         </a>
         <a
-          class="c13"
+          class="c12"
           data-testid="app-tile-wrapper"
           rel="noreferrer"
           target="_blank"
         >
           <div
-            class="c14"
+            class="c13"
           >
             <header
-              class="c15"
+              class="c14"
             >
               <div>
                 <h2
@@ -835,28 +833,28 @@ exports[`Apps home page it renders correctly 1`] = `
             </header>
             <img
               alt=""
-              class="c16 default"
+              class="c15 default"
               src="/bg-node.jpg"
             />
             <img
               alt=""
-              class="c16 hover"
+              class="c15 hover"
               src="/bg-node-hover.jpg"
               title="Nodes"
             />
           </div>
           <div
-            class="c17"
+            class="c16"
           >
             Hosted Filecoin Nodes.
           </div>
         </a>
       </div>
       <div
-        class="c18 c19"
+        class="c17 c18"
       />
       <div
-        class="c18 c20"
+        class="c17 c19"
       >
         <p>
           Instead of the fortress, there are numerous fortresses now, and various people have keys.
@@ -868,10 +866,10 @@ exports[`Apps home page it renders correctly 1`] = `
     </div>
   </div>
   <footer
-    class="c21"
+    class="c20"
   >
     <svg
-      class="c22"
+      class="c21"
       height="71px"
       version="1.1"
       viewBox="0 0 52 71"
@@ -915,13 +913,13 @@ exports[`Apps home page it renders correctly 1`] = `
       </g>
     </svg>
     <div
-      class="c23"
+      class="c22"
     >
       <ul
-        class="c24"
+        class="c23"
       >
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://discord.gg/B9ju5Eu4Rq"
@@ -932,7 +930,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://blog.glif.io"
@@ -943,7 +941,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://github.com/glifio"
@@ -954,7 +952,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://lotus.filecoin.io/docs/developers/hosted-lotus/"
@@ -965,7 +963,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="mailto:squad@infinitescroll.org"
@@ -977,10 +975,10 @@ exports[`Apps home page it renders correctly 1`] = `
         </li>
       </ul>
       <ul
-        class="c24"
+        class="c23"
       >
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://wallet.glif.io"
@@ -991,7 +989,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://safe.glif.io"
@@ -1002,7 +1000,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://explorer.glif.io"
@@ -1013,7 +1011,7 @@ exports[`Apps home page it renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="c25"
+          class="c24"
         >
           <a
             href="https://verify.glif.io"
@@ -1025,14 +1023,14 @@ exports[`Apps home page it renders correctly 1`] = `
         </li>
       </ul>
       <div
-        class="c26"
+        class="c25"
       >
         GLIF
         <br />
         Freeport, Grand Bahamas
       </div>
       <div
-        class="c27"
+        class="c26"
       >
         2022 Glif for life
       </div>
