@@ -55,11 +55,7 @@ exports[`Apps home page it renders correctly 1`] = `
 
 .c17 {
   position: relative;
-  padding: 3rem 1.5rem;
-}
-
-.c17:not(:last-child) {
-  padding-bottom: 0;
+  margin: 3rem 1.5rem;
 }
 
 .c17 > *:first-child {
@@ -71,7 +67,7 @@ exports[`Apps home page it renders correctly 1`] = `
 }
 
 .c19 {
-  font-size: 28px;
+  font-size: var(--font-size-xl);
 }
 
 .c19 p {
@@ -238,7 +234,7 @@ exports[`Apps home page it renders correctly 1`] = `
 
 .c12 {
   position: relative;
-  font-size: 28px;
+  font-size: var(--font-size-xl);
   line-height: 1.3em;
   display: block;
   -webkit-text-decoration: none;
@@ -277,7 +273,7 @@ exports[`Apps home page it renders correctly 1`] = `
   align-items: flex-start;
   position: relative;
   z-index: 2;
-  font-size: 26px;
+  font-size: var(--font-size-xl);
   line-height: 1;
 }
 
@@ -290,7 +286,7 @@ exports[`Apps home page it renders correctly 1`] = `
 
 .c16 {
   z-index: 1;
-  font-size: 26px;
+  font-size: var(--font-size-xl);
   line-height: 1.3;
 }
 
@@ -335,7 +331,7 @@ exports[`Apps home page it renders correctly 1`] = `
 
 @media (min-width:868px) {
   .c17 {
-    padding: 3rem;
+    margin: 3rem;
   }
 }
 
@@ -481,7 +477,7 @@ exports[`Apps home page it renders correctly 1`] = `
   .c16 {
     width: 100%;
     white-space: normal;
-    font-size: 13px;
+    font-size: 1rem;
     padding: 15px 5px 0 var(--space-m);
   }
 }
@@ -656,7 +652,7 @@ exports[`Apps home page it renders correctly 1`] = `
             >
               <div>
                 <h2
-                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                  style="margin: 0px; opacity: 1; text-decoration: none;"
                 >
                   Wallet
                 </h2>
@@ -696,12 +692,12 @@ exports[`Apps home page it renders correctly 1`] = `
             >
               <div>
                 <h2
-                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                  style="margin: 0px; opacity: 1; text-decoration: none;"
                 >
                   Safe
                 </h2>
                 <h3
-                  style="font-size: 26px; opacity: 0.3; text-decoration: line-through; line-height: 1; margin: 0px;"
+                  style="opacity: 0.3; text-decoration: line-through; line-height: 1; margin: 0px;"
                 >
                   Vault
                 </h3>
@@ -740,13 +736,13 @@ exports[`Apps home page it renders correctly 1`] = `
             >
               <div>
                 <h2
-                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                  style="margin: 0px; opacity: 1; text-decoration: none;"
                 >
                   Explorer
                 </h2>
                 
                 <h3
-                  style="font-size: 26px; opacity: 0.5; line-height: 1; margin: 0px;"
+                  style="opacity: 0.5; line-height: 1; margin: 0px;"
                 >
                   Beta
                 </h3>
@@ -785,7 +781,7 @@ exports[`Apps home page it renders correctly 1`] = `
             >
               <div>
                 <h2
-                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                  style="margin: 0px; opacity: 1; text-decoration: none;"
                 >
                   Verify
                 </h2>
@@ -824,7 +820,7 @@ exports[`Apps home page it renders correctly 1`] = `
             >
               <div>
                 <h2
-                  style="font-size: 26px; margin: 0px; opacity: 1; text-decoration: none;"
+                  style="margin: 0px; opacity: 1; text-decoration: none;"
                 >
                   Nodes
                 </h2>
