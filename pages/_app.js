@@ -2,11 +2,7 @@ import '@glif/base-css'
 import App from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import {
-  theme,
-  ThemeProvider,
-  EnvironmentProvider
-} from '@glif/react-components'
+import { EnvironmentProvider } from '@glif/react-components'
 
 import JSONLD from '../JSONLD'
 
@@ -77,9 +73,7 @@ class MyApp extends App {
           sentryDsn={process.env.NEXT_PUBLIC_SENTRY_DSN}
           sentryEnv={process.env.NEXT_PUBLIC_SENTRY_ENV}
         >
-          <ThemeProvider theme={theme}>
-            <Component {...pageProps} />
-          </ThemeProvider>
+          <Component {...pageProps} />
         </EnvironmentProvider>
       </>
     )
